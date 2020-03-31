@@ -45,34 +45,19 @@ class Command(BaseCommand):
         models.Store.objects.bulk_create(stores_bulk)
 
         print("[+] Done")
-# menu
-        print("[*] Initializing menus...")
-        models.Menu.objects.all().delete()
-        menus = dataframes["menus"]
-        menus_bulk = [
-            models.Menu(
-                id=menu.id,
-                store=models.Store.objects.get(id=menu.store),
-                menu_name=menu.menu_name,
-                price=menu.price,
-            )
-            for menu in menus.itertuples()
-        ]
-        models.Menu.objects.bulk_create(menus_bulk)
-
-        print("[+] Done")
 
 # # user
         print("[*] Initializing users...")
         models.User.objects.all().delete()
         users = dataframes["users"]
+        print(users.head())
         users_bulk = [
             models.User(
                 id=user.id,
                 gender=user.gender,
                 birth_year=user.birth_year,
-                email="None",
-                nickname=user.id,
+                username="None"+str(user.id)+"@c.c",
+                nickname="user"+str(user.id),
             )
             for user in users.itertuples()
         ]
@@ -99,7 +84,22 @@ class Command(BaseCommand):
 
         print("[+] Done")
 
+# menu
+        print("[*] Initializing menus...")
+        models.Menu.objects.all().delete()
+        menus = dataframes["menus"]
+        menus_bulk = [
+            models.Menu(
+                id=menu.id,
+                store=models.Store.objects.get(id=menu.store),
+                menu_name=menu.menu_name,
+                price=menu.price,
+            )
+            for menu in menus.itertuples()
+        ]
+        models.Menu.objects.bulk_create(menus_bulk)
 
+        print("[+] Done")
 
     def handle(self, *args, **kwargs):
         self._initialize()

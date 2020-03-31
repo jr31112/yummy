@@ -20,6 +20,10 @@ class Store(models.Model):
     def category_list(self):
         return self.category.split("|") if self.category else []
 
+class Image(models.Model):
+    id = models.AutoField(primary_key=True)
+    link = models.TextField(blank=False)
+    store = models.ForeignKey(Store, on_delete=models.CASCADE)
 
 # 2 User
 class User(AbstractUser):
@@ -27,7 +31,7 @@ class User(AbstractUser):
     id = models.AutoField(primary_key=True) #auto increment
     gender = models.CharField(max_length=5, blank=False)
     birth_year = models.IntegerField(blank=False)
-    email = models.EmailField(max_length=50, null=False, blank=False, unique = True)
+    username = models.EmailField(max_length=50, null=False, blank=False, unique = True)
     nickname = models.CharField(max_length=20, blank=False)
 
 
