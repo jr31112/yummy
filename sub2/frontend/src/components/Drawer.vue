@@ -9,6 +9,7 @@
     mobile-break-point="900"
     width="250"
   >
+  
     <v-layout column>
       <v-list rounded>
         <v-list-item
@@ -49,6 +50,11 @@ export default {
         to: "/search",
         icon: "mdi-card-search",
         text: "맛집 검색"
+      },
+      {
+        to: "/signup",
+        icon: "mdi-account-multiple-plus",
+        text: "회원가입"
       }
     ]
   }),

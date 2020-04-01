@@ -9,10 +9,11 @@
 
 <script>
 import { mapMutations, mapState } from "vuex";
-
 export default {
+
   data: () => ({
-    responsive: false
+    responsive: false,
+    isNavi: false,
   }),
   computed: {
     ...mapState("app", ["drawer"])
@@ -36,6 +37,11 @@ export default {
       } else {
         this.responsive = false;
       }
+    },
+    
+    clickNavi() {
+      this.isNavi = !this.isNavi
+      this.$emit('child',this.isNavi)
     }
   }
 };
