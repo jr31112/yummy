@@ -32,7 +32,7 @@ class User(AbstractBaseUser):
     birth_year = models.IntegerField()
     email = models.EmailField(max_length=50, unique = True)
     nickname = models.CharField(max_length=20)
-    USERNAME
+    USERNAME_FIELD = 'email'
 
 # 3 Review
 class Review(models.Model):

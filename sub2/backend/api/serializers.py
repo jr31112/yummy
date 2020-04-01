@@ -20,3 +20,12 @@ class StoreSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
+        fields = ['gender', 'birth_year', 'email', 'nickname']
+
+        def create(self, validated_data):
+            user = get_user_model().objects.create(
+                username=validated_data['username']
+            )
+            user.set_password(validated_data['password'])
+            user.save()
+            return user
