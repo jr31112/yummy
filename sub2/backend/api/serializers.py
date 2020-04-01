@@ -1,4 +1,4 @@
-from .models import Store
+from .models import Store, User
 from rest_framework import serializers
 
 
@@ -16,3 +16,7 @@ class StoreSerializer(serializers.ModelSerializer):
             "longitude",
             "category_list",
         ]
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
