@@ -24,7 +24,7 @@ class Command(BaseCommand):
         """
         print("[*] Loading data...")
         dataframes = self._load_dataframes()
-# store
+
         print("[*] Initializing stores...")
         models.Store.objects.all().delete()
         stores = dataframes["stores"]
@@ -43,61 +43,6 @@ class Command(BaseCommand):
             for store in stores.itertuples()
         ]
         models.Store.objects.bulk_create(stores_bulk)
-
-        print("[+] Done")
-
-# # user
-        print("[*] Initializing users...")
-        models.User.objects.all().delete()
-        users = dataframes["users"]
-        print(users.head())
-        users_bulk = [
-            models.User(
-                id=user.id,
-                gender=user.gender,
-                birth_year=user.birth_year,
-                username="None"+str(user.id)+"@c.c",
-                nickname="user"+str(user.id),
-            )
-            for user in users.itertuples()
-        ]
-        models.User.objects.bulk_create(users_bulk)
-
-        print("[+] Done")
-
-# review
-        print("[*] Initializing reviews...")
-        models.Review.objects.all().delete()
-        reviews = dataframes["reviews"]
-        reviews_bulk = [
-            models.Review(
-                id=review.id,
-                store=models.Store.objects.get(id=review.store),
-                user=models.User.objects.get(id=review.user),
-                total_score=review.score,
-                content=review.content,
-                reg_time=review.reg_time,
-            )
-            for review in reviews.itertuples()
-        ]
-        models.Review.objects.bulk_create(reviews_bulk)
-
-        print("[+] Done")
-
-# menu
-        print("[*] Initializing menus...")
-        models.Menu.objects.all().delete()
-        menus = dataframes["menus"]
-        menus_bulk = [
-            models.Menu(
-                id=menu.id,
-                store=models.Store.objects.get(id=menu.store),
-                menu_name=menu.menu_name,
-                price=menu.price,
-            )
-            for menu in menus.itertuples()
-        ]
-        models.Menu.objects.bulk_create(menus_bulk)
 
         print("[+] Done")
 
