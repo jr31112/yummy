@@ -1,9 +1,5 @@
-from .models import Store
-from .models import User
-from .models import Review
-from .models import Menu
+from .models import Store, CustomUser, Review, Menu
 from rest_framework import serializers
-
 
 class StoreSerializer(serializers.ModelSerializer):
     class Meta:
@@ -22,7 +18,7 @@ class StoreSerializer(serializers.ModelSerializer):
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
+        model = CustomUser
         fields = [
             "id",
             "gender",
