@@ -2,7 +2,7 @@ from django.utils import timezone
 from django.db import models
 import secrets
 import datetime
-from django.contrib.auth.models import AbstractBaseUser
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
 # 1 Store
 class Store(models.Model):
@@ -28,9 +28,9 @@ class Image(models.Model):
 # 2 User
 class User(AbstractBaseUser):
     id = models.AutoField(primary_key=True)
-    gender = models.CharField(max_length=5)
-    birth_year = models.IntegerField()
     email = models.EmailField(max_length=50, unique = True)
+    birth_year = models.IntegerField()
+    gender = models.CharField(max_length=5)
     nickname = models.CharField(max_length=20)
     USERNAME_FIELD = 'email'
 
