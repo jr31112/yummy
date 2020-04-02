@@ -1,21 +1,15 @@
-from api import models, serializers
-from rest_framework import viewsets
-from rest_framework.pagination import PageNumberPagination
+from django.shortcuts import render, get_object_or_404
+from .serializers import UserSerializer
+from django.contrib.auth import get_user_model, authenticate
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from rest_framework_jwt.serializers import JSONWebTokenSerializer
 
-
-class SmallPagination(PageNumberPagination):
-    page_size = 10
-    page_size_query_param = "page_size"
-    max_page_size = 50
-
-
-class StoreViewSet(viewsets.ModelViewSet):
-    serializer_class = serializers.StoreSerializer
-    pagination_class = SmallPagination
-
-    def get_queryset(self):
-        name = self.request.query_params.get("name", "")
-        queryset = (
-            models.Store.objects.all().filter(store_name__contains=name).order_by("id")
-        )
-        return queryset
+@api_view(["POST"])
+def signup(request):
+    serializer = UserSerializer(data=request.data)
+    print(serializer)
+    if serializer.is_valid(raise_exception=True):
+        user = UserSerializer.create(get_user_model(), request.data)
+        serializer = UserSerializer(user)
+        return Response(serializer.data)
