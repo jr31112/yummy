@@ -67,7 +67,7 @@ export default new Vuex.Store({
             form.append('access_token', token)
             if(token!=null){
               // 반환된 토큰을 가지고 유저 정보를 가져와 저장(멤버 정보 반환)
-                axios.post("/account/loginToken", form)
+                axios.post("", form)
                     .then(response=>{
                         let userinfo = {
                             email : response.data.object.email,
