@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'django.contrib.sites',
     # 'rest_framework.authtoken',
-    # 'rest_auth'
+    'rest_auth'
 ]
 
 SITE_ID = 1
@@ -130,6 +130,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',

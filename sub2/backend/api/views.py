@@ -12,4 +12,5 @@ def signup(request):
     if serializer.is_valid(raise_exception=True):
         user = UserSerializer.create(get_user_model(), request.data)
         serializer = UserSerializer(user)
+        print(serializer)
         return Response(serializer.data)

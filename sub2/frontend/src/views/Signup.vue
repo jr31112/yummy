@@ -61,7 +61,6 @@
         },
         methods: {
             submit() {
-              if(this.isSubmit){
                 let form = new FormData()
                 form.append('id', this.id)
                 form.append('name', this.name)
@@ -76,7 +75,6 @@
                 .catch(Error => {
                   console.log(Error)
                 })
-               }
             }
         }
 
