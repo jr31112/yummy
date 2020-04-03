@@ -17,6 +17,8 @@ class Store(models.Model):
     latitude = models.FloatField(max_length=10, null=True,  blank=True)
     longitude = models.FloatField(max_length=10, null=True,  blank=True)
     category = models.CharField(max_length=200,  null=True, blank=True)
+    review_count = models.IntegerField(blank=True, null=True)
+    review_total_score = models.IntegerField(blank=True, null=True)
 
     @property
     def category_list(self):
@@ -29,7 +31,6 @@ class Image(models.Model):
 
 # 2 User
 class CustomUser(AbstractBaseUser):
-    id =  models.AutoField(primary_key=True)
     username = None
     email = models.EmailField(_('email address'), unique=True)
     birth_year = models.IntegerField(blank=True, null=True)

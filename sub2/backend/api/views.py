@@ -39,6 +39,7 @@ class Store(APIView, PaginationHandlerMixin):
         category = request.query_params.get("category", None)
         order_by = request.query_params.get("order_by", None)
 
+        # 기본 전체 store objects
         instance = models.Store.objects.all()
 
         if name is not None:
@@ -51,16 +52,27 @@ class Store(APIView, PaginationHandlerMixin):
         # //  TODO:  Req 2-1 종류, 리뷰 수 등 다양한 검색조건 추가 & 정렬
         # 커스텀 필드는 소트가 않데...
         if order_by is not None:
+            desc = request.query_params.get("desc", None)
+            # 이름 정렬
             if order_by =="name":
-                instance = instance.order_by("store_name")
+                if desc=='True' or desc is None:
+                    instance = instance.order_by("store_name")
+                elif desc=='False':
+                    instance = instance.order_by("-store_name")
+
             # 리뷰 수에 따른 정렬
             elif order_by=="review":
-                # instance = instance.order_by('-review_store')
-                instance = sorted(instance, key=lambda k: k['review_store'], reverse=True)
-                pass
+                if desc =='True' or desc is None:
+                    instance = instance.order_by("review_count")
+                elif desc=='False':
+                    instance = instance.order_by("-review_count")
+
             # 평균 점수에 따른 정렬
             elif order_by =="score":
-                pass
+                if desc =='True' or desc is None:
+                    instance = instance.extra(select={'avg':'review_total_score / review_count'}, order_by=('avg',))
+                elif desc=='False':
+                    instance = instance.extra(select={'avg':'review_total_score / review_count'}, order_by=('-avg',))
 
         page = self.paginate_queryset(instance)
         if page is not None:
@@ -68,6 +80,7 @@ class Store(APIView, PaginationHandlerMixin):
  many=True).data)
         else:
             serializer = serializers.StoreListSerializer(instance, many=True)
+            
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 # 가게를 추가하는 API
@@ -124,8 +137,6 @@ class StoreDetail(APIView):
         store = get_object_or_404(models.Store, pk=pk)
         store.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
-
 
 
 """

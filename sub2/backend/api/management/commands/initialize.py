@@ -8,7 +8,8 @@ from api import models
 class Command(BaseCommand):
     help = "initialize database"
     DATA_DIR = Path(settings.BASE_DIR).parent.parent / "data"
-    DATA_FILE = str(DATA_DIR / "dump.pkl")
+    DATA_FILE = str(DATA_DIR / "dump_with_rev.pkl") # review정보 포함한것
+    # DATA_FILE = str(DATA_DIR / "dump.pkl") #포함 안한것
 
     def _load_dataframes(self):
         try:
@@ -24,8 +25,35 @@ class Command(BaseCommand):
         """
         print("[*] Loading data...")
         dataframes = self._load_dataframes()
+# load store dataframe with reviewcount , total_score
+# store
+        print("[*] Initializing stores...(+review:score, count")
+        models.Store.objects.all().delete()
+        stores = dataframes["stores"]
+        print(stores.head())
+        stores_bulk = [
+            models.Store(
+                id=store.id,
+                store_name=store.store_name,
+                branch=store.branch,
+                area=store.area,
+                tel=store.tel,
+                address=store.address,
+                latitude=store.latitude,
+                longitude=store.longitude,
+                category=store.category,
+                review_count=store.count,
+                review_total_score=store.total,
+            )
+            for store in stores.itertuples()
+        ]
+        models.Store.objects.bulk_create(stores_bulk)
 
-# # user
+        print("[+] Done")
+    def handle(self, *args, **kwargs):
+        self._initialize()
+'''
+# user
         print("[*] Initializing users...")
         models.CustomUser.objects.all().delete()
         users = dataframes["users"]
@@ -98,6 +126,4 @@ class Command(BaseCommand):
         models.Menu.objects.bulk_create(menus_bulk)
 
         print("[+] Done")
-
-    def handle(self, *args, **kwargs):
-        self._initialize()
+'''
