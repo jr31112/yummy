@@ -8,13 +8,12 @@ from rest_framework import status
 from rest_framework.pagination import PageNumberPagination
 from api.pagination import PaginationHandlerMixin
 from api import models, serializers
-
+from django.db.models import Count
 
 class SmallPagination(PageNumberPagination):
     page_size = 10
     page_size_query_param = "page_size"
     max_page_size = 50
-
 
 """
 Store API
@@ -22,6 +21,7 @@ Store API
  class StoreDetail      [stores/<int:pk>] [get, patch, delete]
 """
 # stores/
+
 class Store(APIView, PaginationHandlerMixin):
     pagination_class = SmallPagination
     serializer_class = serializers.StoreSerializer
@@ -62,13 +62,15 @@ class Store(APIView, PaginationHandlerMixin):
 
             # 리뷰 수에 따른 정렬
             elif order_by=="review":
+                gte = request.query_params.get("gte", None)
                 if desc =='True' or desc is None:
-                    instance = instance.order_by("review_count")
+                    instance = instance.filter(review_count__gte=gte).order_by("review_count")
                 elif desc=='False':
-                    instance = instance.order_by("-review_count")
+                    instance = instance.filter(review_count__gte=gte).order_by("-review_count")
 
             # 평균 점수에 따른 정렬
             elif order_by =="score":
+                gte = request.query_params.get("gte", None)
                 if desc =='True' or desc is None:
                     instance = instance.extra(select={'avg':'review_total_score / review_count'}, order_by=('avg',))
                 elif desc=='False':
