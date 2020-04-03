@@ -29,6 +29,7 @@ class Image(models.Model):
 
 # 2 User
 class CustomUser(AbstractBaseUser):
+    id =  models.AutoField(primary_key=True)
     username = None
     email = models.EmailField(_('email address'), unique=True)
     birth_year = models.IntegerField(blank=True, null=True)

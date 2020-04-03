@@ -74,6 +74,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'rest_auth.registration',
     'api',
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [

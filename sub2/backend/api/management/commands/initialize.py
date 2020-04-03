@@ -24,6 +24,24 @@ class Command(BaseCommand):
         """
         print("[*] Loading data...")
         dataframes = self._load_dataframes()
+
+# # user
+        print("[*] Initializing users...")
+        models.CustomUser.objects.all().delete()
+        users = dataframes["users"]
+        users_bulk = [
+            models.CustomUser(
+                id = user.id,
+                email="None"+str(user.id)+"@co.co",
+                birth_year=user.birth_year,
+                gender=user.gender,
+                nickname="user"+str(user.id),
+            )
+            for user in users.itertuples()
+        ]
+        models.CustomUser.objects.bulk_create(users_bulk)
+
+        print("[+] Done")
 # store
         print("[*] Initializing stores...")
         models.Store.objects.all().delete()
@@ -45,26 +63,6 @@ class Command(BaseCommand):
         models.Store.objects.bulk_create(stores_bulk)
 
         print("[+] Done")
-
-# # user
-        print("[*] Initializing users...")
-        models.User.objects.all().delete()
-        users = dataframes["users"]
-        print(users.head())
-        users_bulk = [
-            models.User(
-                id=user.id,
-                gender=user.gender,
-                birth_year=user.birth_year,
-                username="None"+str(user.id)+"@c.c",
-                nickname="user"+str(user.id),
-            )
-            for user in users.itertuples()
-        ]
-        models.User.objects.bulk_create(users_bulk)
-
-        print("[+] Done")
-
 # review
         print("[*] Initializing reviews...")
         models.Review.objects.all().delete()
@@ -73,7 +71,7 @@ class Command(BaseCommand):
             models.Review(
                 id=review.id,
                 store=models.Store.objects.get(id=review.store),
-                user=models.User.objects.get(id=review.user),
+                user=models.CustomUser.objects.get(id=review.user),
                 total_score=review.score,
                 content=review.content,
                 reg_time=review.reg_time,
