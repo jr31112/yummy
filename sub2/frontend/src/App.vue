@@ -20,15 +20,5 @@ export default {
     RouteView,
     GoTop
   },
-  data:() => {
-    return {
-      isNavi: false
-    }
-  },
-  methods: {
-    updateNavi(drawer) {
-      this.isNavi = drawer;
-    },
-  }
 };
 </script>

@@ -17,6 +17,11 @@ export default [
   {
     path: "/detail",
     view: "Detail",
-    name: "Detail"
+    name: "detail"
+  },
+  {
+    path: "/login",
+    view: "Login",
+    name: "login"
   }
 ];

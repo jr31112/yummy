@@ -1,5 +1,6 @@
 from django.contrib.auth.base_user import BaseUserManager
 from django.utils.translation import ugettext_lazy as _
+from rest_framework.response import Response
 
 
 class CustomUserManager(BaseUserManager):

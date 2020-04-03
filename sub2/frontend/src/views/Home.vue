@@ -22,7 +22,7 @@ export default {
     goStore(StoreName){
       var router = this.$router
       router.push({
-        name:"Detail",
+        name:"detail",
         params:{
           "StoreName": StoreName
         }

@@ -24,24 +24,6 @@ class Store(models.Model):
 
 class Image(models.Model):
     id = models.AutoField(primary_key=True)
-    link = models.TextField()
-    store = models.ForeignKey(Store, on_delete=models.CASCADE)
-
-# 2 User
-class User(AbstractBaseUser):
-    id = models.AutoField(primary_key=True)
-    email = models.EmailField(max_length=50, unique = True)
-    birth_year = models.IntegerField()
-    gender = models.CharField(max_length=5)
-    nickname = models.CharField(max_length=20)
-    USERNAME_FIELD = 'email'
-
-# 3 Review
-class Review(models.Model):
-    id = models.AutoField(primary_key=True)
-    store = models.ForeignKey(Store, on_delete=models.CASCADE, related_name="review_store")
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name = "review_id")
-    total_score = models.FloatField(max_length=50)
     link = models.TextField(blank=False)
     store = models.ForeignKey(Store, on_delete=models.CASCADE)
 

@@ -24,6 +24,9 @@
           </v-list-item-action>
           <v-list-item-title v-text="link.text" />
         </v-list-item>
+        <button @click="$store.dispatch('logout')">
+          로그아웃
+        </button>
       </v-list>
     </v-layout>
   </v-navigation-drawer>
@@ -55,6 +58,11 @@ export default {
         to: "/signup",
         icon: "mdi-account-multiple-plus",
         text: "회원가입"
+      },
+      {
+        to: "/login",
+        icon: "mdi-account-multiple-plus",
+        text: "로그인"
       }
     ]
   }),

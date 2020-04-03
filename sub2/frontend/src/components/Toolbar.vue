@@ -15,9 +15,6 @@ export default {
     responsive: false,
     isNavi: false,
   }),
-  computed: {
-    ...mapState("app", ["drawer"])
-  },
   mounted() {
     this.onResponsiveInverted();
     window.addEventListener("resize", this.onResponsiveInverted);
@@ -27,7 +24,6 @@ export default {
   },
 
   methods: {
-    ...mapMutations("app", ["setDrawer"]),
     onClickDrawer() {
       this.setDrawer(!this.drawer);
     },

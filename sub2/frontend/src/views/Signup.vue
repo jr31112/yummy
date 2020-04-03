@@ -5,36 +5,36 @@
             <p style="vertical-align: middle;padding: 8px 5px;float:left;">회원가입</p>
         </div>
         <br>
-
             <div style="width:50%">
-                <v-text-field style="color:blue;" label="ID" v-model="id" id="id" hide-details="auto"></v-text-field>
+                <v-text-field style="color:blue;" label="이메일" v-model="email" id="email"></v-text-field>
             </div>
             <br>
 
             <div style="width:50%">
-                <v-text-field style="color:blue" v-model="nickName" id="nickName" label="닉네임" hide-details="auto"></v-text-field>
+                <v-text-field style="color:blue" v-model="password1" label="비밀번호" type=password></v-text-field>
             </div>
             <br>
 
             <div style="width:50%">
-                <v-text-field style="color:blue;" label="나이" v-model="age" id="age" hide-details="auto"></v-text-field>
+                <v-text-field style="color:blue"  v-model="password2" label="비밀번호 확인" type=password></v-text-field>
             </div>
             <br>
 
             <div style="width:50%">
-                <v-text-field style="color:blue" v-model="password" label="비밀번호" type=password hide-details="auto"></v-text-field>
+                <v-text-field style="color:blue;" label="성별" v-model="gender" id="gender"></v-text-field>
             </div>
             <br>
 
             <div style="width:50%">
-                <v-text-field style="color:blue"  v-model="passwordConfirm" label="비밀번호 확인" type=password hide-details="auto"></v-text-field>
+                <v-text-field style="color:blue" v-model="nickname" id="nickname" label="닉네임"></v-text-field>
             </div>
             <br>
 
             <div style="width:50%">
-                <v-text-field style="color:blue;" label="이메일" v-model="email" id="email" hide-details="auto"></v-text-field>
+                <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
             </div>
             <br>
+
             
         <div>
             <button @click="submit">
@@ -46,34 +46,42 @@
 </template>
 
 <script>
+import axios from 'axios'
     export default {
         data: () => {
             return {
-                id:'',
-                name: '',
-                age:'',
+                birth_year:'',
                 email: '',
-                password: '',
-                passwordConfirm: '',
-                nickName: '',
+                password1: '',
+                password2: '',
+                nickname: '',
+                gender:'',
                 isSubmit: false,
             }
         },
         methods: {
             submit() {
                 let form = new FormData()
-                form.append('id', this.id)
-                form.append('name', this.name)
-                form.append('age', this.age)
+                form.append('gender', this.gender)
+                form.append('nickname', this.nickname)
+                form.append('birth_year', this.birth_year)
                 form.append('email', this.email)
-                form.append('password', this.password)
-                form.append('nickname', this.nickName)
+                form.append('password1', this.password1)
+                form.append('password2', this.password2)
                     
-                axios.post("".form)
+                axios.post("http://127.0.0.1:8000/rest-auth/registration/", form)
                 .then(Response => {
+                    var router = this.$router;
+                            router.push({
+                                name: "home",
+                                params: {
+                                    "email": this.email,
+                                }
+                            });
                 })
                 .catch(Error => {
-                  console.log(Error)
+                    alert('이메일과 비밀번호를 확인하세요')
+                    console.log(Error)
                 })
             }
         }
