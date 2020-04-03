@@ -1,44 +1,26 @@
 <template>
-  <v-app-bar id="app-toolbar" app flat color="blue lighten-1">
-    <v-btn v-if="responsive" dark icon @click.stop="onClickDrawer">
-      <v-icon>mdi-view-list</v-icon>
-    </v-btn>
+  <v-app-bar id="app-toolbar" app flat color="white lighten-1">
+    <button @click="clickNavi">
+      asdasdadassddsadasdd
+    </button>
+    
     <v-spacer />
   </v-app-bar>
 </template>
 
 <script>
-import { mapMutations, mapState } from "vuex";
 export default {
 
   data: () => ({
     responsive: false,
     isNavi: false,
   }),
-  mounted() {
-    this.onResponsiveInverted();
-    window.addEventListener("resize", this.onResponsiveInverted);
-  },
-  beforeDestroy() {
-    window.removeEventListener("resize", this.onResponsiveInverted);
-  },
 
   methods: {
-    onClickDrawer() {
-      this.setDrawer(!this.drawer);
-    },
-    onResponsiveInverted() {
-      if (window.innerWidth < 900) {
-        this.responsive = true;
-      } else {
-        this.responsive = false;
-      }
-    },
-    
     clickNavi() {
       this.isNavi = !this.isNavi
       this.$emit('child',this.isNavi)
     }
   }
-};
+}
 </script>

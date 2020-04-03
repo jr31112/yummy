@@ -1,7 +1,7 @@
 <template>
   <v-app id="app">
     <toolbar />
-    <Drawer></Drawer>
+    <Drawer @child="updateNavi" v-if="isNavi"></Drawer>
     <route-view />
     <go-top />
   </v-app>
@@ -20,5 +20,16 @@ export default {
     RouteView,
     GoTop
   },
+  methods:{
+    updateNavi(val) {
+      console.log('asd')
+      this.isNavi = val
+    }
+  },
+  data: () =>{
+    return {
+      isNavi: false
+    }
+  }
 };
 </script>
