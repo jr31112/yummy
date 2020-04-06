@@ -1,6 +1,16 @@
 <template>
   <v-container class="mt-5" fill-height>
+    <header style="height:300px; background-size:cover; background-image: url('https://mp-seoul-image-production-s3.mangoplate.com/d8e852bf7058841a7a0694af93af1b9a.jpg');" class="fill-height">
+    </header>
     <v-card-text class="text-center">
+      <button @click="goStore(a)">
+      <h1>짜장면</h1>  
+      </button>
+      <br>
+      <button @click="goStore(b)">
+      <h1>국밥</h1>
+      </button>
+      <br>
       <p class="display-3 pa-2">🍜</p>
       <p class="display-2 pa-5">코딩도 식후경</p>
       <v-btn large color="blue lighten-1 white--text ma-5" rounded to="/search">검색하기</v-btn>
@@ -9,5 +19,24 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods:{
+    goStore(StoreName){
+      var router = this.$router
+      router.push({
+        name:"detail",
+        params:{
+          "StoreName": StoreName
+        }
+      })
+    }
+  },
+  data: () => {
+    return {
+      a:"짜장면",
+      b:"국밥",
+    }
+  }
+
+};
 </script>
