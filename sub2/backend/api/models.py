@@ -30,8 +30,7 @@ class Image(models.Model):
     store = models.ForeignKey(Store, on_delete=models.CASCADE)
 
 # 2 User
-class CustomUser(AbstractBaseUser):
-    username = None
+class User(AbstractBaseUser):
     email = models.EmailField(_('email address'), unique=True)
     birth_year = models.IntegerField(blank=True, null=True)
     gender = models.CharField(max_length=5, blank=True)
@@ -59,7 +58,7 @@ class Review(models.Model):
     # id = models.IntegerField(primary_key=True)
     id = models.AutoField(primary_key=True) #auto increment
     store = models.ForeignKey(Store, null=False, blank=False, on_delete=models.CASCADE, related_name="review_store")
-    user = models.ForeignKey(CustomUser, null=False, blank=False, on_delete=models.CASCADE, related_name = "review_id")
+    user = models.ForeignKey(User, null=False, blank=False, on_delete=models.CASCADE, related_name = "review_id")
     total_score = models.FloatField(max_length=50, blank=False)
     content = models.TextField()
     reg_time = models.DateTimeField(auto_now_add=True)

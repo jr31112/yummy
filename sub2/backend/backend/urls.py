@@ -1,15 +1,13 @@
-from allauth.account.views import confirm_email
-from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework_jwt.views import obtain_jwt_token
+from api.views import create_user
 
 # fmt: off
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", include("api.urls")),
-    url(r'^rest-auth/', include('rest_auth.urls')),
-    url(r'^rest-auth/registration/', include('rest_auth.registration.urls')),
-    url(r'^account/', include('allauth.urls')),
-    url(r'^accounts-rest/registration/account-confirm-email/(?P<key>.+)/$', confirm_email, name='account_confirm_email'),
+    path('login/', obtain_jwt_token),
+    path('signup/', create_user)
 ]
 # fmt: on
