@@ -105,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = "ko"
+LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "Asia/Seoul"
 
@@ -133,7 +133,8 @@ REST_FRAMEWORK = {
 
 import datetime
 JWT_AUTH = {
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1)
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'api.views.jwt_response_payload_handler'
 }
 
 PASSWORD_HASHERS = (
@@ -144,3 +145,8 @@ PASSWORD_HASHERS = (
     "django.contrib.auth.hashers.MD5PasswordHasher",
     "django.contrib.auth.hashers.CryptPasswordHasher",
 )
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+
+]

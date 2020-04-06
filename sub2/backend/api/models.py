@@ -6,7 +6,7 @@ from django.contrib.auth.models import AbstractBaseUser
 from django.utils.translation import ugettext_lazy as _
 from .managers import CustomUserManager
 
-# 1 Store
+
 class Store(models.Model):
     id = models.AutoField(primary_key=True)
     store_name = models.CharField(max_length=50)
@@ -23,11 +23,6 @@ class Store(models.Model):
     @property
     def category_list(self):
         return self.category.split("|") if self.category else []
-
-class Image(models.Model):
-    id = models.AutoField(primary_key=True)
-    link = models.TextField(blank=False)
-    store = models.ForeignKey(Store, on_delete=models.CASCADE)
 
 # 2 User
 class User(AbstractBaseUser):
