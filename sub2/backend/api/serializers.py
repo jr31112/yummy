@@ -16,6 +16,30 @@ class StoreSerializer(serializers.ModelSerializer):
             "category_list",
         ]
 
+class StoreListSerializer(serializers.ModelSerializer):
+#     review_store = serializers.StringRelatedField(many=True)
+#     review_count = serializers.IntegerField(
+#     source='review_store.count'
+# )
+    review_avg_score = serializers.SerializerMethodField()
+    class Meta:
+        model = Store
+        fields = [
+        "id",
+        "store_name",
+        "branch",
+        "area",
+        "category_list",
+        "review_count",
+        "review_total_score",
+        "review_avg_score"
+        ]
+    def get_review_avg_score(self, obj):
+        if(obj.review_count==0):
+            return 0
+        else:
+            return obj.review_total_score/obj.review_count
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
