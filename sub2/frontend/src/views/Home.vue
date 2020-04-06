@@ -1,5 +1,7 @@
 <template>
   <v-container class="mt-5" fill-height>
+    <header style="height:300px; background-size:cover; background-image: url('https://mp-seoul-image-production-s3.mangoplate.com/d8e852bf7058841a7a0694af93af1b9a.jpg');" class="fill-height">
+    </header>
     <v-card-text class="text-center">
       <button @click="goStore(a)">
       <h1>짜장면</h1>  

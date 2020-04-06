@@ -1,9 +1,20 @@
-from django.conf.urls import url
-from rest_framework.routers import DefaultRouter
-from api import views
+from rest_framework import permissions
+from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
+from . import views
 
+urlpatterns = [
+    #class -> as view
+    # def -> x
+    path('stores/', views.Store.as_view()),
+    path('stores/<int:pk>/', views.StoreDetail.as_view()),
 
-router = DefaultRouter(trailing_slash=False)
-router.register(r"stores", views.StoreViewSet, basename="stores")
+    path('reviews/', views.Review.as_view()),
+    path('reviews/<int:pk>/', views.ReviewDetail.as_view()),
+    path('reviews/user/<int:pk>/', views.ReviewByUser.as_view()),
 
-urlpatterns = router.urls
+    path('menus/', views.Menu.as_view()),
+    path('menus/<int:pk>/', views.MenuDetail.as_view()),
+
+]

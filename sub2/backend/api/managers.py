@@ -1,6 +1,5 @@
 from django.contrib.auth.base_user import BaseUserManager
 from django.utils.translation import ugettext_lazy as _
-from rest_framework.response import Response
 
 
 class CustomUserManager(BaseUserManager):
@@ -8,7 +7,12 @@ class CustomUserManager(BaseUserManager):
         if not email:
             raise ValueError(_('The Email must be set'))
         email = self.normalize_email(email)
-        user = self.model(email=email, gender=gender, birth_year=birth_year, nickname=nickname)
+        user = self.model(
+            email=email,
+            gender=gender,
+            birth_year=birth_year,
+            nickname=nickname
+        )
         user.set_password(password)
         user.save()
         return user

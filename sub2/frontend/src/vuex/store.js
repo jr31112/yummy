@@ -37,7 +37,7 @@ export default new Vuex.Store({
             form.append('email', loginObj.email)
             form.append('password', loginObj.password)
             // 로그인 -> 토큰반환
-            axios.post("http://127.0.0.1:8000/rest-auth/login/", form)
+            axios.post("http://127.0.0.1:8000/login/", form)
             .then(res=>{
                 console.log(res)
                 //let token = res.data.token;
@@ -73,7 +73,7 @@ export default new Vuex.Store({
             //로컬 스토리지에 저장되어 있는 토큰을 불러온다.
             if(token!=null){
               // 반환된 토큰을 가지고 유저 정보를 가져와 저장(멤버 정보 반환)
-                axios.get("http://127.0.0.1:8000/rest-auth/user/", {headers: { 'Authorization': `JWT ${token}`}})
+                axios.get("http://127.0.0.1:8000/user/", {headers: { 'Authorization': `JWT ${token}`}})
                 .then(response=>{
                     console.log(response)
                     let userinfo = {

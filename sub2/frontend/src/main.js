@@ -7,6 +7,7 @@ import store from "./vuex/store";
 import Vuex from 'vuex'
 import axios from 'axios'
 
+export const EventBus = new Vue()
 Vue.use(Vuex)
 Vue.prototype.$Axios = axios;
 

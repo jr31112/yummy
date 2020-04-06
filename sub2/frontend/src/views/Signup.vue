@@ -69,7 +69,7 @@ import axios from 'axios'
                 form.append('password1', this.password1)
                 form.append('password2', this.password2)
                     
-                axios.post("http://127.0.0.1:8000/rest-auth/registration/", form)
+                axios.post("http://127.0.0.1:8000/signup/", form)
                 .then(Response => {
                     var router = this.$router;
                             router.push({
