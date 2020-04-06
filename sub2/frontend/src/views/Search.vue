@@ -21,7 +21,7 @@
                       rounded
                       color="blue lighten-1"
                       @click="onSubmit"
-                    >GO!</v-btn>
+                    >GO!!!!</v-btn>
                   </v-flex>
                 </v-layout>
               </v-container>
