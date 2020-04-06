@@ -1,5 +1,10 @@
 from django.utils import timezone
 from django.db import models
+import secrets
+import datetime
+from django.contrib.auth.models import AbstractBaseUser
+from django.utils.translation import ugettext_lazy as _
+from .managers import CustomUserManager
 
 
 class Store(models.Model):
