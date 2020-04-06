@@ -4,8 +4,9 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from rest_framework import status
-
+from .serializers import UserSerializer
 from rest_framework.pagination import PageNumberPagination
+from django.contrib.auth import get_user_model
 from api.pagination import PaginationHandlerMixin
 from api import models, serializers
 from django.db.models import Count
@@ -281,3 +282,13 @@ class MenuDetail(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
+@api_view(["POST"])
+def create_user(request):
+    error = UserSerializer.validate(get_user_model(), data=request.data)
+    if error['password'] or error['email']:
+        return Response(error, status=400)
+    serializer = UserSerializer(data=request.data)
+    if serializer.is_valid(raise_exception=True):
+        user = UserSerializer.create(get_user_model(), request.data)
+        serializer = UserSerializer(user)
+        return Response(serializer.data)
