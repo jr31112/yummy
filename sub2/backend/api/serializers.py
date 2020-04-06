@@ -2,6 +2,7 @@ from .models import Store, User, Review, Menu
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 
+
 class StoreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Store
@@ -16,8 +17,6 @@ class StoreSerializer(serializers.ModelSerializer):
             "longitude",
             "category_list",
         ]
-
-class StoreListSerializer(serializers.ModelSerializer):
 #     review_store = serializers.StringRelatedField(many=True)
 #     review_count = serializers.IntegerField(
 #     source='review_store.count'
