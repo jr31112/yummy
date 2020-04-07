@@ -50,47 +50,46 @@ class Command(BaseCommand):
         models.Store.objects.bulk_create(stores_bulk)
 
         print("[+] Done")
-    def handle(self, *args, **kwargs):
-        self._initialize()
-'''
+
+
 # user
         print("[*] Initializing users...")
-        models.CustomUser.objects.all().delete()
+        models.User.objects.all().delete()
         users = dataframes["users"]
         users_bulk = [
-            models.CustomUser(
+            models.User(
                 id = user.id,
                 email="None"+str(user.id)+"@co.co",
-                birth_year=user.birth_year,
+                birth_year=user.age,
                 gender=user.gender,
                 nickname="user"+str(user.id),
             )
             for user in users.itertuples()
         ]
-        models.CustomUser.objects.bulk_create(users_bulk)
+        models.User.objects.bulk_create(users_bulk)
 
         print("[+] Done")
 # store
-        print("[*] Initializing stores...")
-        models.Store.objects.all().delete()
-        stores = dataframes["stores"]
-        stores_bulk = [
-            models.Store(
-                id=store.id,
-                store_name=store.store_name,
-                branch=store.branch,
-                area=store.area,
-                tel=store.tel,
-                address=store.address,
-                latitude=store.latitude,
-                longitude=store.longitude,
-                category=store.category,
-            )
-            for store in stores.itertuples()
-        ]
-        models.Store.objects.bulk_create(stores_bulk)
+#         print("[*] Initializing stores...")
+#         models.Store.objects.all().delete()
+#         stores = dataframes["stores"]
+#         stores_bulk = [
+#             models.Store(
+#                 id=store.id,
+#                 store_name=store.store_name,
+#                 branch=store.branch,
+#                 area=store.area,
+#                 tel=store.tel,
+#                 address=store.address,
+#                 latitude=store.latitude,
+#                 longitude=store.longitude,
+#                 category=store.category,
+#             )
+#             for store in stores.itertuples()
+#         ]
+#         models.Store.objects.bulk_create(stores_bulk)
 
-        print("[+] Done")
+#         print("[+] Done")
 # review
         print("[*] Initializing reviews...")
         models.Review.objects.all().delete()
@@ -99,7 +98,7 @@ class Command(BaseCommand):
             models.Review(
                 id=review.id,
                 store=models.Store.objects.get(id=review.store),
-                user=models.CustomUser.objects.get(id=review.user),
+                user=models.User.objects.get(id=review.user),
                 total_score=review.score,
                 content=review.content,
                 reg_time=review.reg_time,
@@ -126,4 +125,6 @@ class Command(BaseCommand):
         models.Menu.objects.bulk_create(menus_bulk)
 
         print("[+] Done")
-'''
+
+    def handle(self, *args, **kwargs):
+        self._initialize()

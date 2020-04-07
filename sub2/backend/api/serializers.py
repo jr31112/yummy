@@ -17,10 +17,12 @@ class StoreSerializer(serializers.ModelSerializer):
             "longitude",
             "category_list",
         ]
+class StoreListSerializer(serializers.ModelSerializer):
 #     review_store = serializers.StringRelatedField(many=True)
 #     review_count = serializers.IntegerField(
 #     source='review_store.count'
 # )
+
     review_avg_score = serializers.SerializerMethodField()
     class Meta:
         model = Store
