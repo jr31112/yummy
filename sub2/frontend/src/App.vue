@@ -1,6 +1,6 @@
 <template>
-  <v-app id="app">
-    <header style="height:300px; background-size:cover; background-image: url('https://mp-seoul-image-production-s3.mangoplate.com/d8e852bf7058841a7a0694af93af1b9a.jpg');" class="fill-height">
+  <v-app id="app"> 
+    <header style="height:400px">
       <v-btn
         color="pink"
         dark
@@ -11,6 +11,7 @@
     </header>
 
   <v-navigation-drawer
+    style="z-index:21"
     id="app-drawer"
     v-model="drawer"
     app
@@ -19,7 +20,7 @@
     absolute
     temporary
     mobile-break-point="900"
-    width="250"
+    width="250" 
   >
   
     <v-layout column>
@@ -57,7 +58,7 @@
 <script>
 import RouteView from "@/components/RouteView";
 import GoTop from "@/components/GoTop";
-
+import '../src/css/app.css'
 export default {
   components: {
     RouteView,
@@ -93,3 +94,12 @@ export default {
   }),
 };
 </script>
+<style lang="scss" scoped>
+header {
+  height:400px; 
+  position:fixed; 
+  z-index:20;
+  top:10px
+}
+
+</style>

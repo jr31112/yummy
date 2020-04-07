@@ -1,6 +1,6 @@
 <template>
 <v-app>
-    <div class="user join">
+    <div class="user join" style="position:relative; top:100px">
         <div class="header" style="width:100%; height:40px">
             <p style="vertical-align: middle;padding: 8px 5px;float:left;">회원가입</p>
         </div>
@@ -34,6 +34,7 @@
                 <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
             </div>
             <br>
+
 
             
         <div>

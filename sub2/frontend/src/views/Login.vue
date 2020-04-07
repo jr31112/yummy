@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="position:relative; top:100px">
         <div>
             <div>
                 <v-text-field label="이메일 주소 입력"
