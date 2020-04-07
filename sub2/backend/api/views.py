@@ -64,14 +64,20 @@ class Store(APIView, PaginationHandlerMixin):
             # 리뷰 수에 따른 정렬
             elif order_by=="review":
                 gte = request.query_params.get("gte", None)
-                if desc =='True' or desc is None:
-                    instance = instance.filter(review_count__gte=gte).order_by("review_count")
-                elif desc=='False':
-                    instance = instance.filter(review_count__gte=gte).order_by("-review_count")
+                if gte is not None:
+                    if desc =='True' or desc is None:
+                        instance = instance.filter(review_count__gte=gte).order_by("review_count")
+                    else:
+                        instance = instance.filter(review_count__gte=gte).order_by("-review_count")
+                else:
+                    if desc=='True' or desc is None:
+                        instance = instance.order_by("review_count")
+                    else:
+                        instance = instance.order_by("-review_count")
+
 
             # 평균 점수에 따른 정렬
             elif order_by =="score":
-                gte = request.query_params.get("gte", None)
                 if desc =='True' or desc is None:
                     instance = instance.extra(select={'avg':'review_total_score / review_count'}, order_by=('avg',))
                 elif desc=='False':

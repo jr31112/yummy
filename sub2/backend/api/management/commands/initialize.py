@@ -54,10 +54,10 @@ class Command(BaseCommand):
 
 # user
         print("[*] Initializing users...")
-        models.CustomUser.objects.all().delete()
+        models.User.objects.all().delete()
         users = dataframes["users"]
         users_bulk = [
-            models.CustomUser(
+            models.User(
                 id = user.id,
                 email="None"+str(user.id)+"@co.co",
                 birth_year=user.age,
@@ -66,7 +66,7 @@ class Command(BaseCommand):
             )
             for user in users.itertuples()
         ]
-        models.CustomUser.objects.bulk_create(users_bulk)
+        models.User.objects.bulk_create(users_bulk)
 
         print("[+] Done")
 # store
@@ -98,7 +98,7 @@ class Command(BaseCommand):
             models.Review(
                 id=review.id,
                 store=models.Store.objects.get(id=review.store),
-                user=models.CustomUser.objects.get(id=review.user),
+                user=models.User.objects.get(id=review.user),
                 total_score=review.score,
                 content=review.content,
                 reg_time=review.reg_time,
