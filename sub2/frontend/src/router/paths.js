@@ -19,9 +19,9 @@ export default [
     view: "Detail",
     name: "detail"
   },
-  {
-    path: "/login",
-    view: "Login",
-    name: "login"
-  }
+  // {
+  //   path: "/login",
+  //   view: "Login",
+  //   name: "login"
+  // }
 ];

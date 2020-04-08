@@ -1,7 +1,7 @@
 <template>
 <div>
 <div style="margin:100px"></div>
-<v-container style="background-image: url('https://pixabay.com/get/54e1d4444953ac14f6da8c7dda293277113cd6e2524c704c7d2978d69f4cc75f_1280.jpg'); background-size:cover">
+<v-container style="background-image: url('https://pixabay.com/get/54e1d4444953ac14f6da8c7dda293277113cd6e2524c704c7d2978d69f4cc75f_1280.jpg'); background-size:cover; margin:0">
   <v-row>
     <v-col>
 
@@ -78,7 +78,7 @@
 
 <!-- 유저 경로 -->
 <h2 style="margin:3%">유저 추천 경로</h2>
-<carousel :perPage=4 :autoplay='true' :loop='true' :autoplayHoverPause='true'>
+<carousel :perPage=4 :autoplay='true' :loop='true' :autoplayHoverPause='true' :navigationEnabled='true'>
   <slide v-for="item in list" v-bind:key="item.id">
      <v-card
     max-width="344"

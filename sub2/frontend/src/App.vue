@@ -11,47 +11,14 @@
         <v-btn text x-large color="primary"><h2>탐색</h2></v-btn>
       </v-col>
       <v-col style="float:right; text-align:right">
-        <v-btn @click.stop="dialog = true" text x-large="" color="error"><h2>로그인</h2></v-btn>
+        <v-btn @click="handleClickButton" text x-large="" color="error"><h2>로그인</h2></v-btn>
       </v-col>
     </v-row>
     </header>
+
     <route-view />
     <go-top />
-      <v-row justify="center">
 
-    <v-dialog
-      v-model="dialog"
-      max-width="500"
-    >
-      <v-card>
-        <v-card-title class="headline">Use Google's location service?</v-card-title>
-
-        <v-card-text>
-          Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
-        </v-card-text>
-
-        <v-card-actions>
-          <v-spacer></v-spacer>
-
-          <v-btn
-            color="green darken-1"
-            text
-            @click="dialog = false"
-          >
-            Disagree
-          </v-btn>
-
-          <v-btn
-            color="green darken-1"
-            text
-            @click="dialog = false"
-          >
-            Agree
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-  </v-row>
   </v-app>
 </template>
 
@@ -62,7 +29,7 @@ import '../src/css/app.css'
 export default {
   components: {
     RouteView,
-    GoTop
+    GoTop,
   },
 
   methods:{
@@ -95,6 +62,7 @@ export default {
   }),
 };
 </script>
+
 <style lang="scss" scoped>
 .toolbar {
   height:70px; 

@@ -34,42 +34,6 @@
                 <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
             </div>
             <br>
-             <div style="width:50%">
-                <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
-            </div>
-            <br>
-             <div style="width:50%">
-                <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
-            </div>
-            <br>
-             <div style="width:50%">
-                <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
-            </div>
-            <br>
-             <div style="width:50%">
-                <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
-            </div>
-            <br>
-             <div style="width:50%">
-                <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
-            </div>
-            <br>
-             <div style="width:50%">
-                <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
-            </div>
-            <br>
-             <div style="width:50%">
-                <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
-            </div>
-            <br>
-             <div style="width:50%">
-                <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
-            </div>
-            <br>
-            
-
-
-            
         <div>
             <button @click="submit">
                 회원가입

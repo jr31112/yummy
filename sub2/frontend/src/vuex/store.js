@@ -30,7 +30,7 @@ export default new Vuex.Store({
             state.isLogin = false
             state.isLoginError = false
             state.userinfo = null
-            sessionStorage.removeItem('access_token')
+            localStorage.removeItem('access_token')
         },
         
     },
@@ -53,13 +53,13 @@ export default new Vuex.Store({
                     this.state.birth_year = response.data.user.birth_year,
                     this.state.nickname = response.data.user.nickname,
 
-                    sessionStorage.setItem("access_token", token)
+                    localStorage.setItem("access_token", token)
                     // dispatch("getMemberInfo") //액션은 디스패치로 불러온다.
                     dispatch("getMemberInfo")
                 }
   
                 else {
-                    sessionStorage.removeItem('access_token')
+                    localStorage.removeItem('access_token')
                     alert("아이디 혹은 비밀번호를 확인해주세요.")
                 }
             })
@@ -78,7 +78,7 @@ export default new Vuex.Store({
           },
 
         getMemberInfo({commit}){
-            let token = sessionStorage.getItem("access_token")
+            let token = localStorage.getItem("access_token")
             if(token){
 
                 //로컬 스토리지에 저장되어 있는 토큰을 불러온다.

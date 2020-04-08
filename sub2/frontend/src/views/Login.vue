@@ -36,7 +36,7 @@
 import {mapState, mapActions} from "vuex"
     export default {
         created() {
-            if(sessionStorage.access_token){
+            if(localStorage.access_token){
                 alert("로그인에 성공하셨습니다.")
                 this.$store.dispatch('getMemberInfo')
             }
