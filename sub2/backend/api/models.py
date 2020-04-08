@@ -8,17 +8,8 @@ from .managers import CustomUserManager
 
 
 class Store(models.Model):
-    id = models.AutoField(primary_key=True)
+    id = models.IntegerField(primary_key=True)
     store_name = models.CharField(max_length=50)
-    branch = models.CharField(max_length=20, null=True, blank=True)
-    area = models.CharField(max_length=50, null=True,  blank=True)
-    tel = models.CharField(max_length=20, null=True,  blank=True)
-    address = models.CharField(max_length=200, null=True,  blank=True)
-    latitude = models.FloatField(max_length=10, null=True,  blank=True)
-    longitude = models.FloatField(max_length=10, null=True,  blank=True)
-    category = models.CharField(max_length=200,  null=True, blank=True)
-    review_count = models.IntegerField(blank=True, null=True)
-    review_total_score = models.IntegerField(blank=True, null=True)
 
     @property
     def category_list(self):
