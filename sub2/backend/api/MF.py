@@ -1,12 +1,8 @@
 import sqlite3
 import pandas as pd
-from surprise import SVD
-from surprise import Dataset
-from surprise.model_selection import cross_validate
-from surprise import dump
 import surprise
 import numpy as np
-
+import os
 def load_dataframes():
     # connect to DB
     con = sqlite3.connect("../db.sqlite3")
@@ -19,60 +15,72 @@ def load_dataframes():
     con.close()
 
     # select some columns
-    stores = df_store[['id','store_name','category']]
-    reviews = df_review[['user_id','store_id','total_score']]
+    stores = df_store.loc[:,['id','store_name','category','address']]
+    reviews = df_review.loc[:,['user_id','store_id','total_score']]
 
     # rename columns and return data
     reviews.rename(columns={'total_score':'rating'}, inplace=True)
     stores.rename(columns={'id':'store_id'},inplace=True)
 
     df = pd.merge(reviews, stores, on="store_id")
-    return df
+    return df,stores
 
-def get_predict_data(df ,raw, alg, user_id, area=None):
-    if area is not None:
-        tmp = df[df['address'].str.contains(area)]
-    else:
-        tmp = raw
-    iids = tmp['store_id'].unique()
-    iidsuser = raw.loc[raw['user_id']==user_id, 'store_id']
-    iids_to_pred = np.setdiff1d(iids,iidsuser) # 안 간 가게 구함(차집합)
 
-    testset = [[user_id,iid,5.] for iid in iids_to_pred]
-    predictions = alg.test(testset)
+# 예측모델 지정해주기 ~~!
+def set_algo(user_id,area=None):
+    # dump file 지정
+    file_name = os.path.expanduser('dump_file')
 
-    pred_ratings = np.array([pred.est for pred in predictions])
-    i_max = pred_ratings.argsort()[:10]
-    iid = iids_to_pred[i_max]
-
-    return iid, i_max,pred_ratings
-
-def print_results(iid, i_max, pred_ratings):
-    for i,m in zip(iid,i_max):
-        print('{0} : {1}'.format(i,pred_ratings[m]))
-
-def get_recommandation_with_userid(df, user_id):
+    # load dataframe
+    df, stores = load_dataframes()
     #swapping columns
-    raw=df[['user_id','store_id','rating']] 
+    raw=df.loc[:,['user_id','store_id','rating']] 
     # when importing from a DF, you only need to specify the scale of the ratings.
     reader = surprise.Reader(rating_scale=(0,5)) 
     #into surprise:
-    dataframe = Dataset.load_from_df(raw,reader)
+    dataframe = surprise.Dataset.load_from_df(raw,reader)
+    trainset = dataframe.build_full_trainset()
 
-    algo = surprise.SVD()
-    # cross_validate(algo, dataframe,measures=['RMSE'], cv=3, verbose=True)
-    algo.fit(dataframe.build_full_trainset())
+    try:
+        _, algo = surprise.dump.load(file_name)
+     
+    except FileNotFoundError:
+        # 파일이 존재하지않는 경우
+        print("Dump file Doesn't exists.")
+        # Use the famous SVD algorithm.
+        algo = surprise.SVD()
+        algo.fit(trainset)
+        surprise.dump.dump(file_name, algo=algo)
 
-    iid, i_max,pred_ratings = get_predict_data(df, raw, algo, user_id)
-    print_results(iid,i_max,pred_ratings)
+    finally:
+        # 전국 검색
+        if area is None:
+            iids = raw['store_id'].unique()
+        else:
+            tmp = df[df['address'].str.contains(area)]
+            iids = tmp['store_id'].unique()
+            
+        iidsUsrnotVisited = raw.loc[raw['user_id']==user_id, 'store_id']
+        iids_to_pred = np.setdiff1d(iids,iidsUsrnotVisited) # 안 간 가게 구함(차집합)
+        # user_id가 가지않은 가게들로 testset 생성
+        testset = [[user_id, iid, 5.] for iid in iids_to_pred]
+        predictions = algo.test(testset)
+        print(surprise.accuracy.rmse(predictions))
+        pred_ratings = np.array([pred.est for pred in predictions])
+        i_max = pred_ratings.argsort()[::-1][:10] # 역순으로 상위 10개
+        #i_max = pred_ratings.argmax()
+        iid = iids_to_pred[i_max]
+        results = []
+        for i,m in zip(iid,i_max):
+            print('{0} : {1}'.format(i,pred_ratings[m]))
+            results.append({i:pred_ratings[m]})
+        return results
+
 
 
 def main():
-    df = load_dataframes()
-    user_id = input(print("enter user ID : "))
-    get_recommandation_with_userid(df, user_id)
-
-
+    result = set_algo(4974)
+    pass
 
 if __name__ == "__main__":
     main()

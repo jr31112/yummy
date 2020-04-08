@@ -58,9 +58,45 @@ class Review(models.Model):
     content = models.TextField()
     reg_time = models.DateTimeField(auto_now_add=True)
 
-# 4 Menu
-class Menu(models.Model):
+
+# 4 Spot(관광지)
+class Spot(models.Model):
     id = models.IntegerField(primary_key=True) #auto increment
-    store = models.ForeignKey(Store, null=False, blank=False, on_delete=models.CASCADE, related_name="menu_store")
-    menu_name = models.CharField(max_length=100, blank=False)
-    price = models.IntegerField(default=0)
+    spot_name = models.CharField(max_length=50)
+    road_address  = models.CharField(max_length=200, null=True,  blank=True)
+    address= models.CharField(max_length=200, null=True,  blank=True)
+    latitude = models.FloatField(max_length=10, null=True,  blank=True)
+    longitude = models.FloatField(max_length=10, null=True,  blank=True)
+    description = models.TextField()
+
+
+# 5 Lodging (숙박업소)
+class Lodging(models.Model):
+    id = models.IntegerField(primary_key=True) #auto increment
+    lodging_name = models.CharField(max_length=50)
+    lodging_type = models.CharField(max_length=50)
+    road_address = models.CharField(max_length=200, null=True,  blank=True)
+    address= models.CharField(max_length=200, null=True,  blank=True)
+    latitude = models.FloatField(max_length=10, null=True,  blank=True)
+    longitude = models.FloatField(max_length=10, null=True,  blank=True)
+    description = models.TextField()
+
+# 4-1 관광지 Review
+class SpotReview(models.Model):
+    id = models.AutoField(primary_key=True) #auto increment
+    spot = models.ForeignKey(Spot, null=False, blank=False, on_delete=models.CASCADE, related_name="review_spot")
+    user = models.ForeignKey(User, null=False, blank=False, on_delete=models.CASCADE, related_name = "spotreview_id")
+    total_score = models.FloatField(max_length=50, blank=False)
+    content = models.TextField()
+    reg_time = models.DateTimeField(auto_now_add=True)
+
+# 5-1 숙박업소 Review
+class LodgingReview(models.Model):
+    id = models.AutoField(primary_key=True) #auto increment
+    lodging = models.ForeignKey(Lodging, null=False, blank=False, on_delete=models.CASCADE, related_name="review_lodging")
+    user = models.ForeignKey(User, null=False, blank=False, on_delete=models.CASCADE, related_name = "lodgingreview_id")
+    total_score = models.FloatField(max_length=50, blank=False)
+    content = models.TextField()
+    reg_time = models.DateTimeField(auto_now_add=True)
+
+# //TODO : 일정 저장 Model 짜야해

@@ -113,19 +113,17 @@ class StoreDetail(APIView):
         store = self.get_object(pk)
         serializer = self.serializer_class(store)
         # 해당 가게의 메뉴, 리뷰를 받아옴
-        menu = store.menu_store.all()
         review = store.review_store.all()
         # print(store_detail.get('store_name'))
         sum=0
         for i in serializers.ReviewSerializer(review,many=True).data:
             sum+=i.get("total_score")
         # store 조회할때
-        # id, detail(store정보), menus, reviews, avg(평균 평점)
+        # id, detail(store정보), reviews, avg(평균 평점)
         avg = None if len(review)==0 else sum/len(review)
         result = {
         "id": pk,
         "detail":serializer.data,
-        "menu": serializers.MenuSerializer(menu,many=True).data,
         "review":serializers.ReviewSerializer(review, many=True).data,
         "avg_score" : avg
         }
@@ -146,7 +144,8 @@ class StoreDetail(APIView):
         store = get_object_or_404(models.Store, pk=pk)
         store.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
+        
+# //TODO : MF.py로 유저 아이디와 지역키워드로 해당 유저에게 지역키워드에 속하는 가게 추천하는거 api 구현해야함
 
 """
 Review API
@@ -169,7 +168,7 @@ class Review(APIView, PaginationHandlerMixin):
         else:
             serializer = self.serializer_class(instance, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
-
+# //TODO : Review추가, 삭제할때 store의 review_count,review_total_score 같이 업데이트하는거 있어야해 ~~!
     # 리뷰를 추가하는 API
     def post(self, request, format=None):
     # request.POST : FormData로 POST 전송이 되었을 때
@@ -226,68 +225,8 @@ class ReviewByUser(APIView, PaginationHandlerMixin):
 
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-"""
-Menu API
-class Menu            [menus/] [get, post]
-class MenuDetail      [menus/<int:pk>] [get, patch, delete]
-"""
-# menus/
-class Menu(APIView, PaginationHandlerMixin):
-    pagination_class = SmallPagination
-    serializer_class = serializers.MenuSerializer
 
-    # 메뉴 리스트를 불러오는 API
-    def get(self, request, format=None, *args, **kwargs):
-        instance = models.Menu.objects.all()
-
-        page = self.paginate_queryset(instance)
-        if page is not None:
-            serializer = self.get_paginated_response(self.serializer_class(page,
-    many=True).data)
-        else:
-            serializer = self.serializer_class(instance, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-    # 메뉴를 추가하는 API
-    def post(self, request, format=None):
-    # request.POST : FormData로 POST 전송이 되었을 때
-    # request.data : FormData로 POST 전송 및 data로 되었을 때
-        serializer = self.serializer_class(data=request.data)
-        if serializer.is_valid(raise_exception=True):
-            serializer.save()
-            return Response(serializer.data)
-
-    # menus/<int:pk>
-class MenuDetail(APIView):
-    serializer_class = serializers.MenuSerializer
-
-    def get_object(self, id):
-            menu = get_object_or_404(models.Menu, pk=id)
-            return menu
-    # 메뉴 id로 불러오는 API
-    def get(self, request, pk):
-        menu = self.get_object(pk)
-        serializer = self.serializer_class(menu)
-
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-    def patch(self, request, pk):
-        menu = get_object_or_404(models.Menu, pk=pk)
-        serializer = self.serializer_class(data=request.data, instance=menu, partial=True)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        else:
-            return Response(status=status.HTTP_406_NOT_ACCEPTABLE)
-
-
-    # 삭제
-    def delete(self, request, pk, format=None):
-        menu = get_object_or_404(models.Menu, pk=pk)
-        menu.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
-
+# //TODO : 관광지, 숙박업소, 관광지Review, 숙박지Review CRUD 구현
 @api_view(["POST"])
 def create_user(request):
     error = UserSerializer.validate(get_user_model(), data=request.data)

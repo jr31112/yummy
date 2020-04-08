@@ -1,4 +1,4 @@
-from .models import Store, User, Review, Menu
+from .models import Store, User, Review, Spot, Lodging, SpotReview, LodgingReview
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 
@@ -101,12 +101,53 @@ class ReviewSerializer(serializers.ModelSerializer):
             "reg_time",
         ]
 
-class MenuSerializer(serializers.ModelSerializer):
+class SpotSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Menu
+        model = Spot
         fields = [
             "id",
-            "store",
-            "menu_name",
-            "price",
+            "spot_name",
+            "road_address",
+            "address",
+            "latitude",
+            "longitude",
+            "description",
+        ]
+
+class LodgingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Lodging
+        fields = [
+            "id",
+            "lodging_name",
+            "lodging_type",
+            "road_address",
+            "address",
+            "latitude",
+            "longitude",
+            "description",
+        ]
+
+class SpotReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SpotReview
+        fields = [
+            "id",
+            "spot",
+            "user",
+            "total_score",
+            "content",
+            "reg_time",
+        ]
+
+class LodgingReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LodgingReview
+        fields = [
+            "id",
+            "lodging",
+            "user",
+            "total_score",
+            "content",
+            "reg_time",
         ]

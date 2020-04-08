@@ -14,7 +14,5 @@ urlpatterns = [
     path('reviews/<int:pk>/', views.ReviewDetail.as_view()),
     path('reviews/user/<int:pk>/', views.ReviewByUser.as_view()),
 
-    path('menus/', views.Menu.as_view()),
-    path('menus/<int:pk>/', views.MenuDetail.as_view()),
 
 ]
