@@ -79,9 +79,10 @@ export default new Vuex.Store({
 
         getMemberInfo({commit}){
             let token = sessionStorage.getItem("access_token")
-            //로컬 스토리지에 저장되어 있는 토큰을 불러온다.
-            console.log(token)
-              // 반환된 토큰을 가지고 유저 정보를 가져와 저장(멤버 정보 반환)
+            if(token){
+
+                //로컬 스토리지에 저장되어 있는 토큰을 불러온다.
+                // 반환된 토큰을 가지고 유저 정보를 가져와 저장(멤버 정보 반환)
                 let userinfo = {
                     email : this.state.email,
                     nickname : this.state.nickname,
@@ -93,6 +94,7 @@ export default new Vuex.Store({
                 if(router.history.current.name=='login'){
                     router.push({name:"home"});
                 }
+            }
             
         } 
     }, 

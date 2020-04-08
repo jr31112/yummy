@@ -1,57 +1,57 @@
 <template>
-  <v-app id="app"> 
-    <header style="height:400px">
-      <v-btn
-        color="pink"
-        dark
-        @click.stop="drawer = !drawer"
-      >
-      <i class="mdi mdi-menu"></i>
-      </v-btn>
+  <v-app id="app">
+    <header>
+    <v-row class="toolbar">
+      <v-col style="float:left">
+        <p class="display-1 pa-2">🍜</p>
+      </v-col>
+      <v-col style="float:middle; text-align:center">
+        <v-btn @click="home" text x-large color="primary"><h2>홈</h2></v-btn>
+        <v-btn text x-large color="primary"><h2>플래너</h2></v-btn>
+        <v-btn text x-large color="primary"><h2>탐색</h2></v-btn>
+      </v-col>
+      <v-col style="float:right; text-align:right">
+        <v-btn @click.stop="dialog = true" text x-large="" color="error"><h2>로그인</h2></v-btn>
+      </v-col>
+    </v-row>
     </header>
-
-  <v-navigation-drawer
-    style="z-index:21"
-    id="app-drawer"
-    v-model="drawer"
-    app
-    white
-    floating
-    absolute
-    temporary
-    mobile-break-point="900"
-    width="250" 
-  >
-  
-    <v-layout column>
-      <v-list rounded>
-        <v-list-item
-          v-for="(link, i) in links"
-          :key="i"
-          :to="link.to"
-          active-class="blue lighten-1 white--text"
-          class="v-list-item ma-3"
-        >
-          <v-list-item-action>
-            <v-icon>{{ link.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-title v-text="link.text" />
-        </v-list-item>
-        <v-list-item
-          active-class="blue lighten-1 white--text"
-          class="v-list-item ma-3"
-        >
-        <button 
-          @click="$store.dispatch('logout')">
-          <v-icon class="mdi mdi-logout"></v-icon>
-          로그아웃
-        </button>
-        </v-list-item>
-      </v-list>
-    </v-layout>
-  </v-navigation-drawer>
     <route-view />
     <go-top />
+      <v-row justify="center">
+
+    <v-dialog
+      v-model="dialog"
+      max-width="500"
+    >
+      <v-card>
+        <v-card-title class="headline">Use Google's location service?</v-card-title>
+
+        <v-card-text>
+          Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+        </v-card-text>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+
+          <v-btn
+            color="green darken-1"
+            text
+            @click="dialog = false"
+          >
+            Disagree
+          </v-btn>
+
+          <v-btn
+            color="green darken-1"
+            text
+            @click="dialog = false"
+          >
+            Agree
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+  </v-row>
   </v-app>
 </template>
 
@@ -64,42 +64,44 @@ export default {
     RouteView,
     GoTop
   },
-  methods:{
 
+  methods:{
+    home(){
+      var router = this.$router
+      router.push({
+        name:"home",
+        params:{
+        }
+      })
+    },
+    login(){
+      var router = this.$router
+      router.push({
+        name:"login",
+        params:{
+        }
+      })
+    },
+    
   },
   data: () => ({
-    drawer:false,
-    links: [
-      {
-        to: "/",
-        icon: "mdi-home",
-        text: "Home"
-      },
-      {
-        to: "/search",
-        icon: "mdi-card-search",
-        text: "맛집 검색"
-      },
-      {
-        to: "/signup",
-        icon: "mdi-account-multiple-plus",
-        text: "회원가입"
-      },
-      {
-        to: "/login",
-        icon: "mdi-account-multiple-plus",
-        text: "로그인"
-      }
-    ]
+    dialog: false,
+    email: '',
+    password: '',
+    birth_year:'',
+    gender:'',
+    nickname:'',
+    access_token: '',
   }),
 };
 </script>
 <style lang="scss" scoped>
-header {
-  height:400px; 
+.toolbar {
+  height:70px; 
   position:fixed; 
   z-index:20;
-  top:10px
+  background-color:white;
+  width:100%
 }
 
 </style>
