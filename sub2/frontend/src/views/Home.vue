@@ -4,75 +4,73 @@
 <v-container style="background-image: url('https://pixabay.com/get/54e1d4444953ac14f6da8c7dda293277113cd6e2524c704c7d2978d69f4cc75f_1280.jpg'); background-size:cover">
   <v-row>
     <v-col>
-
-  <v-hover v-slot:default="{ hover }">
-    <v-card
-      class="mx-auto"
-      color="grey lighten-4"
-      max-width="500"
-    >
-      <v-img
-        :aspect-ratio="16/9"
-        src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_960_720.jpg"
-      >
-        <v-expand-transition>
-          <button>
-
-          <div
-            v-if="hover"
-            class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
-            style="height: 100%;"
+      <v-hover v-slot:default="{ hover }">
+        <v-card
+          class="mx-auto"
+          color="grey lighten-4"
+          max-width="500"
+        >
+          <v-img
+            :aspect-ratio="16/9"
+            src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_960_720.jpg"
           >
-            샤샤샥
-          </div>
-          </button>
-        </v-expand-transition>
-      </v-img>
-      <v-card-text
-        class="pt-6"
-        style="position: relative;"
-      >
-        <h5 class="display-1 font-weight-light orange--text mb-2">맛있겠다 ㅎㅎ</h5 >
+            <v-expand-transition>
+              <button>
 
-      </v-card-text>
-    </v-card>
-  </v-hover>
+              <div
+                v-if="hover"
+                class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
+                style="height: 100%;"
+              >
+                샤샤샥
+              </div>
+              </button>
+            </v-expand-transition>
+          </v-img>
+          <v-card-text
+            class="pt-6"
+            style="position: relative;"
+          >
+            <h5 class="display-1 font-weight-light orange--text mb-2">맛있겠다 ㅎㅎ</h5 >
+
+          </v-card-text>
+        </v-card>
+      </v-hover>
     </v-col>
-<v-col>
-
-  <v-hover v-slot:default="{ hover }">
-    <v-card
-      class="mx-auto"
-      color="grey lighten-4"
-      max-width="500"
-    >
-      <v-img
-        :aspect-ratio="16/9"
-        src="https://cdn.pixabay.com/photo/2015/07/11/23/02/plane-841441_960_720.jpg"
-      >
-        <v-expand-transition>
-          <button>
-
-          <div
-            v-if="hover"
-            class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
-            style="height: 100%;"
+    <v-col>
+      <v-hover v-slot:default="{ hover }">
+        <v-card
+          class="mx-auto"
+          color="grey lighten-4"
+          max-width="500"
+        >
+          <v-img
+            :aspect-ratio="16/9"
+            src="https://cdn.pixabay.com/photo/2015/07/11/23/02/plane-841441_960_720.jpg"
           >
-            계획 짜기
-          </div>
-          </button>
-        </v-expand-transition>
-      </v-img>
-      <v-card-text
-        class="pt-6"
-        style="position: relative;"
-      >
-        <h5 class="display-1 font-weight-light orange--text mb-2">새 플래너 시작</h5 >
+            <v-expand-transition>
+              <button>
 
-      </v-card-text>
-    </v-card>
-  </v-hover>
-</v-col>
+              <div
+                v-if="hover"
+                class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
+                style="height: 100%;"
+              >
+                계획 짜기
+              </div>
+              </button>
+            </v-expand-transition>
+          </v-img>
+          <v-card-text
+            class="pt-6"
+            style="position: relative;"
+          >
+            <h5 class="display-1 font-weight-light orange--text mb-2">새 플래너 시작</h5 >
+
+          </v-card-text>
+        </v-card>
+      </v-hover>
+    </v-col>
   </v-row>
 </v-container>
 

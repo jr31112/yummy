@@ -1,20 +1,6 @@
 <template>
   <v-app id="app">
-    <header>
-    <v-row class="toolbar">
-      <v-col style="float:left">
-        <p class="display-1 pa-2">🍜</p>
-      </v-col>
-      <v-col style="float:middle; text-align:center">
-        <v-btn @click="home" text x-large color="primary"><h2>홈</h2></v-btn>
-        <v-btn text x-large color="primary"><h2>플래너</h2></v-btn>
-        <v-btn text x-large color="primary"><h2>탐색</h2></v-btn>
-      </v-col>
-      <v-col style="float:right; text-align:right">
-        <v-btn @click.stop="dialog = true" text x-large="" color="error"><h2>로그인</h2></v-btn>
-      </v-col>
-    </v-row>
-    </header>
+    <app-bar/>
     <route-view />
     <go-top />
       <v-row justify="center">
@@ -56,11 +42,13 @@
 </template>
 
 <script>
+import AppBar from "@/components/header/AppBar"
 import RouteView from "@/components/RouteView";
 import GoTop from "@/components/GoTop";
 import '../src/css/app.css'
 export default {
   components: {
+    AppBar,
     RouteView,
     GoTop
   },
