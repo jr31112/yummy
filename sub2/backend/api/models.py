@@ -14,8 +14,6 @@ class Store(models.Model):
     @property
     def category_list(self):
         return self.category.split("|") if self.category else []
-    id = models.AutoField(primary_key=True)
-    store = models.ForeignKey(Store, on_delete=models.CASCADE)
 
 # 2 User
 class User(AbstractBaseUser):

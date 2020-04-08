@@ -292,3 +292,9 @@ def create_user(request):
         user = UserSerializer.create(get_user_model(), request.data)
         serializer = UserSerializer(user)
         return Response(serializer.data)
+
+def jwt_response_payload_handler(token, user=None, request=None):
+    return {
+        'token': token,
+        'user': UserSerializer(user, context={'request': request}).data
+    }
