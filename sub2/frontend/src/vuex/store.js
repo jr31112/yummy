@@ -13,7 +13,8 @@ export default new Vuex.Store({
         email:'',
         gender:'',
         birth_year:'',
-        nickname:''
+        nickname:'',
+        dialog:false
     },
     mutations: {
         loginsuccess(state, payload){
@@ -45,6 +46,7 @@ export default new Vuex.Store({
             .then(response=>{
                 //let token = res.data.token;
                 if(response.data.token){ //로그인 성공
+                    this.state.dialog = false
                     let token = response.data.token
                     //토큰을 로컬스토리지에 저장 
 
@@ -69,13 +71,9 @@ export default new Vuex.Store({
             })
         },
         logout({commit}){
-  
             commit("logout")
-            if(router.history.current.name!=='login'){
-                router.push({name:"login"})
-            }
-           
-          },
+            router.push({name:"home"})
+        },
 
         getMemberInfo({commit}){
             let token = localStorage.getItem("access_token")
@@ -89,11 +87,15 @@ export default new Vuex.Store({
                     gender : this.state.gender,
                     birth_year : this.state.birth_year,
                 }
-                console.log(userinfo)
+                
                 commit('loginsuccess',userinfo);
-                if(router.history.current.name=='login'){
-                    router.push({name:"home"});
-                }
+                var router = this.$router;
+                    router.push({
+                        name: "home",
+                        params: {
+                        }
+                    });
+                
             }
             
         } 
