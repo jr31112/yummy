@@ -24,10 +24,16 @@ import cities from '../../../public/city.json'
 
 export default {
     name: 'dmap',
+    props:{
+        destinations:{
+            type:Array,
+            required:true
+        }
+    },
     data() {
-      return {
-        map:null,
-      }
+        return {
+            map:null,
+        }
     },
     mounted() {
       this.mapSetting()
@@ -60,6 +66,7 @@ export default {
                 });
                 kakao.maps.event.addListener(marker, 'mouseover', this.makeOverListener(map, marker, infowindow));
                 kakao.maps.event.addListener(marker, 'mouseout', this.makeOutListener(infowindow));
+                kakao.maps.event.addListener(marker, 'click', this.makeClickListener(marker, infowindow, this.destinations))
                 markers.push(marker)
             }
             clusterer.addMarkers(markers);
@@ -68,7 +75,6 @@ export default {
             var map = this.map
             var roadmapControl = document.getElementById('btnRoadmap');
             var skyviewControl = document.getElementById('btnSkyview');
-            console.log(roadmapControl, skyviewControl)
             if (maptype === 'roadmap') {
                 map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP)
                 roadmapControl.className = 'selected_btn'
@@ -81,7 +87,6 @@ export default {
             }
         },
         zoomIn() {
-            console.log(this.map)
             var map = this.map
             map.setLevel(map.getLevel() - 1)
         },
@@ -91,14 +96,30 @@ export default {
         },
         makeOverListener(map, marker, infowindow) {
             return function() {
-              infowindow.open(map, marker)
+                infowindow.open(map, marker)
             }
         },
         makeOutListener(infowindow) {
             return function() {
-              infowindow.close()
+                infowindow.close()
             }
         },
+        makeClickListener(marker, infowindow, destinations){
+            return function() {
+                // console.log(destinations)
+                var flag = true
+                for (var i=0; i < destinations.length; i++){
+                    if (destinations[i][0].getPosition().equals(marker.getPosition())){
+                        destinations.splice(i,1)
+                        flag = false
+                        break
+                    }
+                }
+                if (flag){
+                    destinations.push([marker, infowindow.getContent()])
+                }
+            }
+        }
     },
 }
 </script>
