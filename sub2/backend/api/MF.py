@@ -5,11 +5,13 @@ import numpy as np
 import os
 def load_dataframes():
     # connect to DB
-    con = sqlite3.connect("../db.sqlite3")
+    con = sqlite3.connect("db.sqlite3") # 모듈 호출시 사용경로
+    # print (os.getcwd()) #현재 디렉토리의
+    # con = sqlite3.connect("../db.sqlite3") # main용
     cur = con.cursor()
     # read table 
     df_store = pd.read_sql_query("SELECT * from api_store", con)
-    df_review = pd.read_sql_query("SELECT * from api_review", con)
+    df_review = pd.read_sql_query("SELECT * from api_storereview", con)
 
     # clonse DB connection
     con.close()
@@ -67,16 +69,14 @@ def set_algo(user_id,area=None):
         predictions = algo.test(testset)
         print(surprise.accuracy.rmse(predictions))
         pred_ratings = np.array([pred.est for pred in predictions])
-        i_max = pred_ratings.argsort()[::-1][:10] # 역순으로 상위 10개
+        i_max = pred_ratings.argsort()[::-1][:5] # 역순으로 상위 5개
         #i_max = pred_ratings.argmax()
         iid = iids_to_pred[i_max]
-        results = []
+        results = {}
         for i,m in zip(iid,i_max):
-            print('{0} : {1}'.format(i,pred_ratings[m]))
-            results.append({i:pred_ratings[m]})
+            # print('{0} : {1}'.format(i,pred_ratings[m]))
+            results[i] = pred_ratings[m]
         return results
-
-
 
 def main():
     result = set_algo(4974)
