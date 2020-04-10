@@ -16,7 +16,7 @@
       </v-col>
       <v-col style="float:middle; text-align:center">
         <v-btn @click="goHome" text x-large color="primary"><h2>홈</h2></v-btn>
-        <v-btn text x-large color="primary"><h2>플래너</h2></v-btn>
+        <v-btn @click="goplanner" text x-large color="primary"><h2>플래너</h2></v-btn>
         <v-btn text x-large color="primary"><h2>탐색</h2></v-btn>
       </v-col>
       <v-col style="float:right; text-align:right">
@@ -121,6 +121,9 @@ export default {
   methods: {
     goHome(){
       router.push({name:"home"})
+    },
+    goplanner() {
+      router.push({name:"planner"})
     },
     Modaloff(val){
       console.log(val)

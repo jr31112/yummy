@@ -19,4 +19,9 @@ export default [
     view: "Detail",
     name: "detail"
   },
+  {
+    path: "/planner",
+    view: "Planner",
+    name: "planner"
+  },
 ];
