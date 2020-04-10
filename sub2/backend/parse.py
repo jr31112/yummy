@@ -59,6 +59,7 @@ def import_data(data_path=DATA_FILE):
     users = {} # 유저 테이블
     menus = []
     idx = 0
+    r_idx = 0
     for d in data:
 
         categories = [c["category"] for c in d["category_list"]]
@@ -79,9 +80,9 @@ def import_data(data_path=DATA_FILE):
         for review in d["review_list"]:
             r = review["review_info"]
             u = review["writer_info"]
-
+            r_idx+=1
             reviews.append(
-                [r["id"], d["id"], u["id"], r["score"], r["content"], r["reg_time"]]
+                [r_idx, d["id"], u["id"], r["score"], r["content"], r["reg_time"]]
             )
             try:
                 users[u["id"]]
@@ -91,7 +92,7 @@ def import_data(data_path=DATA_FILE):
                     "gender", # 유저 성별
                     "age", # 유저 나이
                 )
-                users.update({u["id"]: [u["id"], u["gender"], 2021-int(u["born_year"])]})
+                users.update({u["id"]: [u["id"], u["gender"], u["born_year"]]})
 
         for menu in d["menu_list"]:
             idx += 1
@@ -117,7 +118,8 @@ def import_data(data_path=DATA_FILE):
     store_rev_frame[['total','count']] = store_rev_frame[['total','count']].fillna(value=0)
     store_rev_frame.drop(['store_name_y','store'], axis=1, inplace=True)
     store_rev_frame.rename(columns={'store_name_x':'store_name'},inplace=True)
-
+    # menu_frame에서 결측치 0으로 변경해주기
+    menu_frame['price'] = menu_frame['price'].fillna(value=0)
 
     return {"stores": store_rev_frame, "reviews": review_frame, "users" : user_frame, "menus" : menu_frame} 
 
