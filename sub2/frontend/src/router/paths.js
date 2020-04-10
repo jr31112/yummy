@@ -10,6 +10,11 @@ export default [
     name: "planner"
   },
   {
+    path: "/planner/create",
+    view: "CreatePlan",
+    name: "createplan"
+  },
+  {
     path: "/signup",
     view: "Signup",
     name: "signup"
@@ -18,10 +23,5 @@ export default [
     path: "/detail",
     view: "Detail",
     name: "detail"
-  },
-  {
-    path: "/planner",
-    view: "Planner",
-    name: "planner"
   },
 ];
