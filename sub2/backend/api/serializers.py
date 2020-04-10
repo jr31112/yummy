@@ -1,8 +1,8 @@
-from .models import Store, User, Review, Menu
+from .models import Store, User, Spot, Lodging, SpotReview, LodgingReview ,StoreReview, Plan, PlanDay, Itinerary
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 
-
+# Store
 class StoreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Store
@@ -17,6 +17,7 @@ class StoreSerializer(serializers.ModelSerializer):
             "longitude",
             "category_list",
         ]
+class StoreListSerializer(serializers.ModelSerializer):
 #     review_store = serializers.StringRelatedField(many=True)
 #     review_count = serializers.IntegerField(
 #     source='review_store.count'
@@ -29,6 +30,9 @@ class StoreSerializer(serializers.ModelSerializer):
         "store_name",
         "branch",
         "area",
+        "address",
+        "latitude",
+        "longitude",
         "category_list",
         "review_count",
         "review_total_score",
@@ -87,9 +91,10 @@ class UserSerializer(serializers.ModelSerializer):
         #     error['password'].append('비밀번호에 특수문자를 넣어주세요!')
         return error
 
-class ReviewSerializer(serializers.ModelSerializer):
+# store review
+class StoreReviewSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Review
+        model = StoreReview
         fields = [
             "id",
             "store",
@@ -99,12 +104,167 @@ class ReviewSerializer(serializers.ModelSerializer):
             "reg_time",
         ]
 
-class MenuSerializer(serializers.ModelSerializer):
+# 장소
+# 장소 리스트
+class SpotListSerializer(serializers.ModelSerializer):
+    review_avg_score = serializers.SerializerMethodField()
     class Meta:
-        model = Menu
+        model = Spot
         fields = [
             "id",
+            "spot_name",
+            "road_address",
+            "address",
+            "latitude",
+            "longitude",
+            "review_avg_score",
+        ]
+    def get_review_avg_score(self, obj):
+        if(obj.spotreview_spot.count()==0):
+            return 0
+        else:
+            sum = 0
+            for rev in obj.spotreview_spot.all():
+                sum+=rev.total_score
+            return sum/obj.spotreview_spot.count()
+
+ # 장소
+class SpotSerializer(serializers.ModelSerializer):
+    review_count = serializers.IntegerField(
+    source='spotreview_spot.count'
+)
+    review_avg_score = serializers.SerializerMethodField()
+    class Meta:
+        model = Spot
+        fields = [
+            "id",
+            "spot_name",
+            "road_address",
+            "address",
+            "latitude",
+            "longitude",
+            "description",
+            "review_avg_score",
+            "review_count"
+        ]
+    def get_review_avg_score(self, obj):
+        if(obj.spotreview_spot.count()==0):
+            return 0
+        else:
+            sum = 0
+            for rev in obj.spotreview_spot.all():
+                sum+=rev.total_score
+            return sum/obj.spotreview_spot.count()
+
+# 숙박 리스트
+class LodgingListSerializer(serializers.ModelSerializer):
+    review_avg_score = serializers.SerializerMethodField()
+    class Meta:
+        model = Lodging
+        fields = [
+            "id",
+            "lodging_name",
+            "lodging_type",
+            "road_address",
+            "address",
+            "latitude",
+            "longitude",
+            "review_avg_score",
+        ]
+    def get_review_avg_score(self, obj):
+        if(obj.lodgingreview_lodging.count()==0):
+            return 0
+        else:
+            sum = 0
+            for rev in obj.lodgingreview_lodging.all():
+                sum+=rev.total_score
+            return sum/obj.lodgingreview_lodging.count()
+
+# 숙박
+class LodgingSerializer(serializers.ModelSerializer):
+    review_count = serializers.IntegerField(
+    source='lodgingreview_lodging.count'
+)
+    review_avg_score = serializers.SerializerMethodField()
+    class Meta:
+        model = Lodging
+        fields = [
+            "id",
+            "lodging_name",
+            "lodging_type",
+            "road_address",
+            "address",
+            "latitude",
+            "longitude",
+            "description",
+            "review_avg_score",
+            "review_count"
+        ]
+    def get_review_avg_score(self, obj):
+        if(obj.lodgingreview_lodging.count()==0):
+            return 0
+        else:
+            sum = 0
+            for rev in obj.lodgingreview_lodging.all():
+                sum+=rev.total_score
+            return sum/obj.lodgingreview_lodging.count()
+
+# 장소 리뷰
+class SpotReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SpotReview
+        fields = [
+            "id",
+            "spot",
+            "user",
+            "total_score",
+            "content",
+            "reg_time",
+        ]
+
+# 숙박 리뷰
+class LodgingReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LodgingReview
+        fields = [
+            "id",
+            "lodging",
+            "user",
+            "total_score",
+            "content",
+            "reg_time",
+        ]
+
+class PlanSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Plan
+        fields = [
+            "id",
+            "user_id",
+            "title",
+            "content",
+            "start_date",
+            "end_date"
+        ]
+
+class PlanDaySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PlanDay
+        fields = [
+            "id",
+            "plan_id",
+            "date",
+        ]
+
+class ItinerarySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Itinerary
+        fields = [
+            "id",
+            "day_id",
+            "start_time",
+            "end_time",
             "store",
-            "menu_name",
-            "price",
+            "spot",
+            "lodging"
         ]
