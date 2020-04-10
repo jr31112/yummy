@@ -1,0 +1,1129 @@
+[
+    {
+        "cityName": "\uc11c\uc6b8",
+        "newAddress": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uc911\uad6c \uc138\uc885\ub300\ub85c 110",
+        "oldAddress": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uc911\uad6c \ud0dc\ud3c9\ub85c1\uac00 31",
+        "latitude": "126.9778283816",
+        "longitude": "37.5663176911"
+    },
+    {
+        "cityName": "\ubd80\uc0b0",
+        "newAddress": "\ubd80\uc0b0\uad11\uc5ed\uc2dc \uc5f0\uc81c\uad6c \uc911\uc559\ub300\ub85c 1001",
+        "oldAddress": "\ubd80\uc0b0\uad11\uc5ed\uc2dc \uc5f0\uc81c\uad6c \uc5f0\uc0b0\ub3d9 1000",
+        "latitude": "129.0755738272",
+        "longitude": "35.1804713622"
+    },
+    {
+        "cityName": "\ub300\uad6c",
+        "newAddress": "\ub300\uad6c\uad11\uc5ed\uc2dc \uc911\uad6c \uacf5\ud3c9\ub85c 88",
+        "oldAddress": "\ub300\uad6c\uad11\uc5ed\uc2dc \uc911\uad6c \ub3d9\uc778\ub3d91\uac00 2-1",
+        "latitude": "128.6012199749",
+        "longitude": "35.8715538823"
+    },
+    {
+        "cityName": "\uc778\ucc9c",
+        "newAddress": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ub0a8\ub3d9\uad6c \uc815\uac01\ub85c 29",
+        "oldAddress": "\uc778\ucc9c\uad11\uc5ed\uc2dc \ub0a8\ub3d9\uad6c \uad6c\uc6d4\ub3d9 1138",
+        "latitude": "126.7047010106",
+        "longitude": "37.4562553577"
+    },
+    {
+        "cityName": "\uad11\uc8fc",
+        "newAddress": "\uad11\uc8fc\uad11\uc5ed\uc2dc \uc11c\uad6c \ub0b4\ubc29\ub85c 111",
+        "oldAddress": "\uad11\uc8fc\uad11\uc5ed\uc2dc \uc11c\uad6c \uce58\ud3c9\ub3d9 1200",
+        "latitude": "126.8514631315",
+        "longitude": "35.1600999528"
+    },
+    {
+        "cityName": "\ub300\uc804",
+        "newAddress": "\ub300\uc804\uad11\uc5ed\uc2dc \uc11c\uad6c \ub454\uc0b0\ub85c 100",
+        "oldAddress": "\ub300\uc804\uad11\uc5ed\uc2dc \uc11c\uad6c \ub454\uc0b0\ub3d9 1420",
+        "latitude": "127.3846335607",
+        "longitude": "36.3503845453"
+    },
+    {
+        "cityName": "\uc6b8\uc0b0",
+        "newAddress": "\uc6b8\uc0b0\uad11\uc5ed\uc2dc \ub0a8\uad6c \uc911\uc559\ub85c 201",
+        "oldAddress": "\uc6b8\uc0b0\uad11\uc5ed\uc2dc \ub0a8\uad6c \uc2e0\uc815\ub3d9 646-4",
+        "latitude": "129.3112562930",
+        "longitude": "35.5379478298"
+    },
+    {
+        "cityName": "\uc138\uc885",
+        "newAddress": "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc \ud55c\ub204\ub9ac\ub300\ub85c 2130",
+        "oldAddress": "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc \ubcf4\ub78c\ub3d9 626-5",
+        "latitude": "127.2890390744",
+        "longitude": "36.4800580806"
+    },
+    {
+        "cityName": "\uc218\uc6d0",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc218\uc6d0\uc2dc \ud314\ub2ec\uad6c \ud6a8\uc6d0\ub85c 241",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc218\uc6d0\uc2dc \ud314\ub2ec\uad6c \uc778\uacc4\ub3d9 1111",
+        "latitude": "127.0286617362",
+        "longitude": "37.2634549418"
+    },
+    {
+        "cityName": "\uc131\ub0a8",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc131\ub0a8\uc2dc \uc911\uc6d0\uad6c \uc131\ub0a8\ub300\ub85c 997",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc131\ub0a8\uc2dc \uc911\uc6d0\uad6c \uc5ec\uc218\ub3d9 200",
+        "latitude": "127.1262817715",
+        "longitude": "37.4201774430"
+    },
+    {
+        "cityName": "\uace0\uc591",
+        "newAddress": "\uacbd\uae30\ub3c4 \uace0\uc591\uc2dc \ub355\uc591\uad6c \uace0\uc591\uc2dc\uccad\ub85c 10",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uace0\uc591\uc2dc \ub355\uc591\uad6c \uc8fc\uad50\ub3d9 600",
+        "latitude": "126.8319596509",
+        "longitude": "37.6584144980"
+    },
+    {
+        "cityName": "\uc6a9\uc778",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc6a9\uc778\uc2dc \ucc98\uc778\uad6c \uc911\ubd80\ub300\ub85c 1199",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc6a9\uc778\uc2dc \ucc98\uc778\uad6c \uc0bc\uac00\ub3d9 556",
+        "latitude": "127.1779688179",
+        "longitude": "37.2408670611"
+    },
+    {
+        "cityName": "\ubd80\ucc9c",
+        "newAddress": "\uacbd\uae30\ub3c4 \ubd80\ucc9c\uc2dc \uc6d0\ubbf8\uad6c \uc9111\ub3d9 \uae38\uc8fc\ub85c 210",
+        "oldAddress": "\uacbd\uae30\ub3c4 \ubd80\ucc9c\uc2dc \uc911\ub3d9 1156",
+        "latitude": "126.765321",
+        "longitude": "37.5035585"
+    },
+    {
+        "cityName": "\uc548\uc0b0",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc548\uc0b0\uc2dc \ub2e8\uc6d0\uad6c \ud654\ub791\ub85c 387",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc548\uc0b0\uc2dc \ub2e8\uc6d0\uad6c \uace0\uc794\ub3d9 515",
+        "latitude": "126.8302427459",
+        "longitude": "37.3221311592"
+    },
+    {
+        "cityName": "\uc548\uc591",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc548\uc591\uc2dc \ub3d9\uc548\uad6c \uc2dc\ubbfc\ub300\ub85c 235",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc548\uc591\uc2dc \ub3d9\uc548\uad6c \uad00\uc591\ub3d9 1590",
+        "latitude": "126.9568605021",
+        "longitude": "37.3942984481"
+    },
+    {
+        "cityName": "\ub0a8\uc591\uc8fc",
+        "newAddress": "\uacbd\uae30\ub3c4 \ub0a8\uc591\uc8fc\uc2dc \uacbd\ucd98\ub85c 1037",
+        "oldAddress": "\uacbd\uae30\ub3c4 \ub0a8\uc591\uc8fc\uc2dc \uae08\uace1\ub3d9 185-10",
+        "latitude": "127.2179956504",
+        "longitude": "37.6366154897"
+    },
+    {
+        "cityName": "\ud654\uc131",
+        "newAddress": "\uacbd\uae30\ub3c4 \ud654\uc131\uc2dc \ub0a8\uc591\uc74d \uc2dc\uccad\ub85c 159",
+        "oldAddress": "\uacbd\uae30\ub3c4 \ud654\uc131\uc2dc \ub0a8\uc591\uc74d \ub0a8\uc591\ub9ac 2000",
+        "latitude": "126.8302654289",
+        "longitude": "37.1974882852"
+    },
+    {
+        "cityName": "\ud3c9\ud0dd",
+        "newAddress": "\uacbd\uae30\ub3c4 \ud3c9\ud0dd\uc2dc \uacbd\uae30\ub300\ub85c 245",
+        "oldAddress": "\uacbd\uae30\ub3c4 \ud3c9\ud0dd\uc2dc \ube44\uc804\ub3d9 846",
+        "latitude": "127.1125266851",
+        "longitude": "36.9923004755"
+    },
+    {
+        "cityName": "\uc758\uc815\ubd80",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc758\uc815\ubd80\uc2dc \uc2dc\ubbfc\ub85c 1",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc758\uc815\ubd80\uc2dc \uc758\uc815\ubd80\ub3d9 326-2",
+        "latitude": "127.0338355611",
+        "longitude": "37.7380638690"
+    },
+    {
+        "cityName": "\uc2dc\ud765",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc2dc\ud765\uc2dc \uc2dc\uccad\ub85c 20",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc2dc\ud765\uc2dc \uc7a5\ud604\ub3d9 300",
+        "latitude": "126.8040654392",
+        "longitude": "37.3804232263"
+    },
+    {
+        "cityName": "\ud30c\uc8fc",
+        "newAddress": "\uacbd\uae30\ub3c4 \ud30c\uc8fc\uc2dc \uc2dc\uccad\ub85c 50",
+        "oldAddress": "\uacbd\uae30\ub3c4 \ud30c\uc8fc\uc2dc \uc544\ub3d9\ub3d9 215-1",
+        "latitude": "126.7798768306",
+        "longitude": "37.7600413844"
+    },
+    {
+        "cityName": "\uad11\uba85",
+        "newAddress": "\uacbd\uae30\ub3c4 \uad11\uba85\uc2dc \uc2dc\uccad\ub85c 20",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uad11\uba85\uc2dc \ucca0\uc0b0\ub3d9 222-1",
+        "latitude": "126.8648458413",
+        "longitude": "37.4790974978"
+    },
+    {
+        "cityName": "\uae40\ud3ec",
+        "newAddress": "\uacbd\uae30\ub3c4 \uae40\ud3ec\uc2dc \uc0ac\uc6b0\uc911\ub85c 1",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uae40\ud3ec\uc2dc \uc0ac\uc6b0\ub3d9 263-1",
+        "latitude": "126.7157171213",
+        "longitude": "37.6151895457"
+    },
+    {
+        "cityName": "\uad70\ud3ec",
+        "newAddress": "\uacbd\uae30\ub3c4 \uad70\ud3ec\uc2dc \uccad\ubc31\ub9ac\uae38 6",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uad70\ud3ec\uc2dc \uae08\uc815\ub3d9 844",
+        "latitude": "126.9361499434",
+        "longitude": "37.3612539109"
+    },
+    {
+        "cityName": "\uad11\uc8fc",
+        "newAddress": "\uacbd\uae30\ub3c4 \uad11\uc8fc\uc2dc \ud589\uc815\ud0c0\uc6b4\ub85c 50",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uad11\uc8fc\uc2dc \uc1a1\uc815\ub3d9 570",
+        "latitude": "127.2550705635",
+        "longitude": "37.4292862188"
+    },
+    {
+        "cityName": "\uc774\ucc9c",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc774\ucc9c\uc2dc \ubd80\uc545\ub85c 40",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc774\ucc9c\uc2dc \uc911\ub9ac\ub3d9 490",
+        "latitude": "127.4350343357",
+        "longitude": "37.2721236266"
+    },
+    {
+        "cityName": "\uc591\uc8fc",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc591\uc8fc\uc2dc \ubd80\ud765\ub85c 1533",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc591\uc8fc\uc2dc \ub0a8\ubc29\ub3d9 1-1",
+        "latitude": "127.0466535607",
+        "longitude": "37.7855692303"
+    },
+    {
+        "cityName": "\uc624\uc0b0",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc624\uc0b0\uc2dc \uc131\ud638\ub300\ub85c 141",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc624\uc0b0\uc2dc \uc624\uc0b0\ub3d9 915",
+        "latitude": "127.0776652683",
+        "longitude": "37.1490355334"
+    },
+    {
+        "cityName": "\uad6c\ub9ac",
+        "newAddress": "\uacbd\uae30\ub3c4 \uad6c\ub9ac\uc2dc \uc544\ucc28\uc0b0\ub85c 439",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uad6c\ub9ac\uc2dc \uad50\ubb38\ub3d9 390-1",
+        "latitude": "127.1307833262",
+        "longitude": "37.5944123829"
+    },
+    {
+        "cityName": "\uc548\uc131",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc548\uc131\uc2dc \uc2dc\uccad\uae38 25",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc548\uc131\uc2dc \ubd09\uc0b0\ub3d9 31-3",
+        "latitude": "127.2792114316",
+        "longitude": "37.0083061469"
+    },
+    {
+        "cityName": "\ud3ec\ucc9c",
+        "newAddress": "\uacbd\uae30\ub3c4 \ud3ec\ucc9c\uc2dc \uc911\uc559\ub85c 87",
+        "oldAddress": "\uacbd\uae30\ub3c4 \ud3ec\ucc9c\uc2dc \uc2e0\uc74d\ub3d9 58-2",
+        "latitude": "127.2003366471",
+        "longitude": "37.8947009216"
+    },
+    {
+        "cityName": "\uc758\uc655",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc758\uc655\uc2dc \uc2dc\uccad\ub85c 11",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc758\uc655\uc2dc \uace0\ucc9c\ub3d9 171",
+        "latitude": "126.9679891751",
+        "longitude": "37.3453186078"
+    },
+    {
+        "cityName": "\ud558\ub0a8",
+        "newAddress": "\uacbd\uae30\ub3c4 \ud558\ub0a8\uc2dc \ub300\uccad\ub85c 10",
+        "oldAddress": "\uacbd\uae30\ub3c4 \ud558\ub0a8\uc2dc \uc2e0\uc7a5\ub3d9 520",
+        "latitude": "127.2155298129",
+        "longitude": "37.5390571062"
+    },
+    {
+        "cityName": "\uc5ec\uc8fc",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc5ec\uc8fc\uc2dc \uc138\uc885\ub85c 1",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc5ec\uc8fc\uc2dc \ud64d\ubb38\ub3d9 4",
+        "latitude": "127.6366239195",
+        "longitude": "37.2982130722"
+    },
+    {
+        "cityName": "\uc591\ud3c9",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc591\ud3c9\uad70 \uc591\ud3c9\uc74d \uad70\uccad\uc55e\uae38 2",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc591\ud3c9\uad70 \uc591\ud3c9\uc74d \uc591\uadfc\ub9ac 450-42",
+        "latitude": "127.4876821927",
+        "longitude": "37.4917410076"
+    },
+    {
+        "cityName": "\ub3d9\ub450\ucc9c",
+        "newAddress": "\uacbd\uae30\ub3c4 \ub3d9\ub450\ucc9c\uc2dc \ubc29\uc8fd\ub85c 23",
+        "oldAddress": "\uacbd\uae30\ub3c4 \ub3d9\ub450\ucc9c\uc2dc \uc0dd\uc5f0\ub3d9 438",
+        "latitude": "127.0615412315",
+        "longitude": "37.9034106823"
+    },
+    {
+        "cityName": "\uacfc\ucc9c",
+        "newAddress": "\uacbd\uae30\ub3c4 \uacfc\ucc9c\uc2dc \uad00\ubb38\ub85c 69",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uacfc\ucc9c\uc2dc \uc911\uc559\ub3d9 1-3",
+        "latitude": "126.9867943671",
+        "longitude": "37.4302021979"
+    },
+    {
+        "cityName": "\uac00\ud3c9",
+        "newAddress": "\uacbd\uae30\ub3c4 \uac00\ud3c9\uad70 \uac00\ud3c9\uc74d \uc11d\ubd09\ub85c 181",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uac00\ud3c9\uad70 \uac00\ud3c9\uc74d \uc74d\ub0b4\ub9ac 513",
+        "latitude": "127.5097056461",
+        "longitude": "37.8313181951"
+    },
+    {
+        "cityName": "\uc5f0\ucc9c",
+        "newAddress": "\uacbd\uae30\ub3c4 \uc5f0\ucc9c\uad70 \uc5f0\ucc9c\uc74d \uc5f0\ucc9c\ub85c 220",
+        "oldAddress": "\uacbd\uae30\ub3c4 \uc5f0\ucc9c\uad70 \uc5f0\ucc9c\uc74d \ucc28\ud0c4\ub9ac 290-1",
+        "latitude": "127.0752600114",
+        "longitude": "38.0965115027"
+    },
+    {
+        "cityName": "\ucd98\ucc9c",
+        "newAddress": "\uac15\uc6d0\ub3c4 \ucd98\ucc9c\uc2dc \uc0ad\uc8fc\ub85c 3",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \ucd98\ucc9c\uc2dc \uad50\ub3d9 36",
+        "latitude": "127.7322723024",
+        "longitude": "37.8818114039"
+    },
+    {
+        "cityName": "\uc6d0\uc8fc",
+        "newAddress": "\uac15\uc6d0\ub3c4 \uc6d0\uc8fc\uc2dc \uc2dc\uccad\ub85c 1",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \uc6d0\uc8fc\uc2dc \ubb34\uc2e4\ub3d9 1",
+        "latitude": "127.9188557485",
+        "longitude": "37.3409327894"
+    },
+    {
+        "cityName": "\uac15\ub989",
+        "newAddress": "\uac15\uc6d0\ub3c4 \uac15\ub989\uc2dc \uac15\ub989\ub300\ub85c 33",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \uac15\ub989\uc2dc \ud64d\uc81c\ub3d9 1001",
+        "latitude": "128.8753356160",
+        "longitude": "37.7532378146"
+    },
+    {
+        "cityName": "\ub3d9\ud574",
+        "newAddress": "\uac15\uc6d0\ub3c4 \ub3d9\ud574\uc2dc \ucc9c\uace1\ub85c 77",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \ub3d9\ud574\uc2dc \ucc9c\uace1\ub3d9 806",
+        "latitude": "129.1143622957",
+        "longitude": "37.5247295662"
+    },
+    {
+        "cityName": "\ud0dc\ubc31",
+        "newAddress": "\uac15\uc6d0\ub3c4 \ud0dc\ubc31\uc2dc \ud0dc\ubd90\ub85c 21",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \ud0dc\ubc31\uc2dc \ud669\uc9c0\ub3d9 244-3",
+        "latitude": "128.9865547451",
+        "longitude": "37.1642169384"
+    },
+    {
+        "cityName": "\uc18d\ucd08",
+        "newAddress": "\uac15\uc6d0\ub3c4 \uc18d\ucd08\uc2dc \uc911\uc559\ub85c 183",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \uc18d\ucd08\uc2dc \uc911\uc559\ub3d9 469-6",
+        "latitude": "128.5919416084",
+        "longitude": "38.2076617887"
+    },
+    {
+        "cityName": "\uc0bc\ucc99",
+        "newAddress": "\uac15\uc6d0\ub3c4 \uc0bc\ucc99\uc2dc \uc911\uc559\ub85c 296",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \uc0bc\ucc99\uc2dc \uad50\ub3d9 592",
+        "latitude": "129.1656266494",
+        "longitude": "37.4498881611"
+    },
+    {
+        "cityName": "\ud64d\ucc9c",
+        "newAddress": "\uac15\uc6d0\ub3c4 \ud64d\ucc9c\uad70 \ud64d\ucc9c\uc74d \uc11d\ud654\ub85c 93",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \ud64d\ucc9c\uad70 \ud64d\ucc9c\uc74d \ud76c\ub9dd\ub9ac 181",
+        "latitude": "127.8886482806",
+        "longitude": "37.6972036244"
+    },
+    {
+        "cityName": "\ud6a1\uc131",
+        "newAddress": "\uac15\uc6d0\ub3c4 \ud6a1\uc131\uad70 \ud6a1\uc131\uc74d \ud0dc\uae30\ub85c 15",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \ud6a1\uc131\uad70 \ud6a1\uc131\uc74d \uc74d\ud558\ub9ac 58-1",
+        "latitude": "127.9850795774",
+        "longitude": "37.4917543321"
+    },
+    {
+        "cityName": "\uc601\uc6d4",
+        "newAddress": "\uac15\uc6d0\ub3c4 \uc601\uc6d4\uad70 \uc601\uc6d4\uc74d \ud558\uc1a1\ub85c 64",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \uc601\uc6d4\uad70 \uc601\uc6d4\uc74d \ud558\uc1a1\ub9ac 242",
+        "latitude": "128.4611824243",
+        "longitude": "37.1830916118"
+    },
+    {
+        "cityName": "\ud3c9\ucc3d",
+        "newAddress": "\uac15\uc6d0\ub3c4 \ud3c9\ucc3d\uad70 \ud3c9\ucc3d\uc74d \uad70\uccad\uae38 77",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \ud3c9\ucc3d\uad70 \ud3c9\ucc3d\uc74d \ud558\ub9ac 210-2",
+        "latitude": "128.3901256887",
+        "longitude": "37.3712725845"
+    },
+    {
+        "cityName": "\uc815\uc120",
+        "newAddress": "\uac15\uc6d0\ub3c4 \uc815\uc120\uad70 \uc815\uc120\uc74d \ubd09\uc5913\uae38 21",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \uc815\uc120\uad70 \uc815\uc120\uc74d \ubd09\uc591\ub9ac 267",
+        "latitude": "128.6608060981",
+        "longitude": "37.3808584858"
+    },
+    {
+        "cityName": "\ucca0\uc6d0",
+        "newAddress": "\uac15\uc6d0\ub3c4 \ucca0\uc6d0\uad70 \uac08\ub9d0\uc74d \uc0bc\ubd80\uc5f0\ub85c 51",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \ucca0\uc6d0\uad70 \uac08\ub9d0\uc74d \uc2e0\ucca0\uc6d0\ub9ac 649",
+        "latitude": "127.3134618344",
+        "longitude": "38.1467557331"
+    },
+    {
+        "cityName": "\ud654\ucc9c",
+        "newAddress": "\uac15\uc6d0\ub3c4 \ud654\ucc9c\uad70 \ud654\ucc9c\uc74d \ud654\ucc9c\uc0c8\uc2f9\uae38 45",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \ud654\ucc9c\uad70 \ud654\ucc9c\uc74d \uc544\ub9ac 239",
+        "latitude": "127.7079951047",
+        "longitude": "38.1066117149"
+    },
+    {
+        "cityName": "\uc591\uad6c",
+        "newAddress": "\uac15\uc6d0\ub3c4 \uc591\uad6c\uad70 \uc591\uad6c\uc74d \uad00\uacf5\uc11c\ub85c 38",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \uc591\uad6c\uad70 \uc591\uad6c\uc74d \ud558\ub9ac 34-5",
+        "latitude": "127.9899688700",
+        "longitude": "38.1100011271"
+    },
+    {
+        "cityName": "\uc778\uc81c",
+        "newAddress": "\uac15\uc6d0\ub3c4 \uc778\uc81c\uad70 \uc778\uc81c\uc74d \uc778\uc81c\ub85c187\ubc88\uae38 8",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \uc778\uc81c\uad70 \uc778\uc81c\uc74d \uc0c1\ub3d9\ub9ac 349-6",
+        "latitude": "128.1703647189",
+        "longitude": "38.0696807823"
+    },
+    {
+        "cityName": "\uace0\uc131",
+        "newAddress": "\uac15\uc6d0\ub3c4 \uace0\uc131\uad70 \uac04\uc131\uc74d \uace0\uc131\uc911\uc559\uae38 9",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \uace0\uc131\uad70 \uac04\uc131\uc74d \ud558\ub9ac 12",
+        "latitude": "128.4680453261",
+        "longitude": "38.3812964194"
+    },
+    {
+        "cityName": "\uc591\uc591",
+        "newAddress": "\uac15\uc6d0\ub3c4 \uc591\uc591\uad70 \uc591\uc591\uc74d \uad70\uccad\uae38 1",
+        "oldAddress": "\uac15\uc6d0\ub3c4 \uc591\uc591\uad70 \uc591\uc591\uc74d \uad70\ud589\ub9ac 8",
+        "latitude": "128.6189567338",
+        "longitude": "38.0755092666"
+    },
+    {
+        "cityName": "\uccad\uc8fc",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \uccad\uc8fc\uc2dc \uc0c1\ub2f9\uad6c \uc0c1\ub2f9\ub85c 155",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \uccad\uc8fc\uc2dc \uc0c1\ub2f9\uad6c \ubd81\ubb38\ub85c3\uac00 89-1",
+        "latitude": "127.4896721331",
+        "longitude": "36.6416121644"
+    },
+    {
+        "cityName": "\ucda9\uc8fc",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \ucda9\uc8fc\uc2dc \uc73c\ub738\ub85c 21",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \ucda9\uc8fc\uc2dc \uae08\ub989\ub3d9 700",
+        "latitude": "127.9252858284",
+        "longitude": "36.9913173882"
+    },
+    {
+        "cityName": "\uc81c\ucc9c",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \uc81c\ucc9c\uc2dc \ub0b4\ud1a0\ub85c 295",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \uc81c\ucc9c\uc2dc \ucc9c\ub0a8\ub3d9 12-2",
+        "latitude": "128.1914992261",
+        "longitude": "37.1330130099"
+    },
+    {
+        "cityName": "\ubcf4\uc740",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \ubcf4\uc740\uad70 \ubcf4\uc740\uc74d \uad70\uccad\uae38 38",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \ubcf4\uc740\uad70 \ubcf4\uc740\uc74d \uc774\ud3c9\ub9ac 45",
+        "latitude": "127.7288340133",
+        "longitude": "36.4889960547"
+    },
+    {
+        "cityName": "\uc625\ucc9c",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \uc625\ucc9c\uad70 \uc625\ucc9c\uc74d \uc911\uc559\ub85c 99",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \uc625\ucc9c\uad70 \uc625\ucc9c\uc74d \uc0bc\uc591\ub9ac 174",
+        "latitude": "127.5718111548",
+        "longitude": "36.3062278651"
+    },
+    {
+        "cityName": "\uc601\ub3d9",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \uc601\ub3d9\uad70 \uc601\ub3d9\uc74d \ub3d9\uc815\ub85c 1",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \uc601\ub3d9\uad70 \uc601\ub3d9\uc74d \uacc4\uc0b0\ub9ac 210-1",
+        "latitude": "127.7832515367",
+        "longitude": "36.1749579981"
+    },
+    {
+        "cityName": "\uc99d\ud3c9",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \uc99d\ud3c9\uad70 \uc99d\ud3c9\uc74d \uad11\uc7a5\ub85c 88",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \uc99d\ud3c9\uad70 \uc99d\ud3c9\uc74d \ucc3d\ub3d9\ub9ac 100",
+        "latitude": "127.5815217738",
+        "longitude": "36.7853772255"
+    },
+    {
+        "cityName": "\uc9c4\ucc9c",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \uc9c4\ucc9c\uad70 \uc9c4\ucc9c\uc74d \uc0c1\uc0b0\ub85c 13",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \uc9c4\ucc9c\uad70 \uc9c4\ucc9c\uc74d \uc74d\ub0b4\ub9ac 463",
+        "latitude": "127.4357665532",
+        "longitude": "36.8548915547"
+    },
+    {
+        "cityName": "\uad34\uc0b0",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \uad34\uc0b0\uad70 \uad34\uc0b0\uc74d \uc784\uaebd\uc815\ub85c 90",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \uad34\uc0b0\uad70 \uad34\uc0b0\uc74d \uc11c\ubd80\ub9ac 125",
+        "latitude": "127.7875348048",
+        "longitude": "36.8157477932"
+    },
+    {
+        "cityName": "\uc74c\uc131",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \uc74c\uc131\uad70 \uc74c\uc131\uc74d \uc911\uc559\ub85c 173",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \uc74c\uc131\uad70 \uc74c\uc131\uc74d \uc74d\ub0b4\ub9ac 621-1",
+        "latitude": "127.6905156030",
+        "longitude": "36.9402820309"
+    },
+    {
+        "cityName": "\ub2e8\uc591",
+        "newAddress": "\ucda9\uccad\ubd81\ub3c4 \ub2e8\uc591\uad70 \ub2e8\uc591\uc74d \uc911\uc5591\ub85c 10",
+        "oldAddress": "\ucda9\uccad\ubd81\ub3c4 \ub2e8\uc591\uad70 \ub2e8\uc591\uc74d \ubcc4\uace1\ub9ac 300",
+        "latitude": "128.3662993791",
+        "longitude": "36.9845553737"
+    },
+    {
+        "cityName": "\ucc9c\uc548",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \ucc9c\uc548\uc2dc \uc11c\ubd81\uad6c \ubd88\ub2f9\ub3d9 \ubc88\uc601\ub85c 156",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \ucc9c\uc548\uc2dc \uc11c\ubd81\uad6c \ubd88\ub2f9\ub3d9 234-1",
+        "latitude": "127.11405",
+        "longitude": "36.8148681"
+    },
+    {
+        "cityName": "\uacf5\uc8fc",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \uacf5\uc8fc\uc2dc \ubd09\ud669\ub85c 1",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \uacf5\uc8fc\uc2dc \ubd09\ud669\ub3d9 319",
+        "latitude": "127.1190678254",
+        "longitude": "36.4461621947"
+    },
+    {
+        "cityName": "\ubcf4\ub839",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \ubcf4\ub839\uc2dc \uc131\uc8fc\uc0b0\ub85c 77",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \ubcf4\ub839\uc2dc \uba85\ucc9c\ub3d9 269-4",
+        "latitude": "126.6120001089",
+        "longitude": "36.3328115436"
+    },
+    {
+        "cityName": "\uc544\uc0b0",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \uc544\uc0b0\uc2dc \uc2dc\ubbfc\ub85c 456",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \uc544\uc0b0\uc2dc \uc628\ucc9c\ub3d9 1626",
+        "latitude": "127.0019091246",
+        "longitude": "36.7902553264"
+    },
+    {
+        "cityName": "\uc11c\uc0b0",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \uc11c\uc0b0\uc2dc \uad00\uc544\ubb38\uae38 1",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \uc11c\uc0b0\uc2dc \uc74d\ub0b4\ub3d9 492",
+        "latitude": "126.4495024887",
+        "longitude": "36.7839641383"
+    },
+    {
+        "cityName": "\ub17c\uc0b0",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \ub17c\uc0b0\uc2dc \uc2dc\ubbfc\ub85c210\ubc88\uae38 9",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \ub17c\uc0b0\uc2dc \ub0b4\ub3d9 824",
+        "latitude": "127.0982548937",
+        "longitude": "36.1875589004"
+    },
+    {
+        "cityName": "\ub2f9\uc9c4",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \ub2f9\uc9c4\uc2dc \uc2dc\uccad1\ub85c 1",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \ub2f9\uc9c4\uc2dc \uc218\uccad\ub3d9 1002",
+        "latitude": "126.6459689074",
+        "longitude": "36.8897399814"
+    },
+    {
+        "cityName": "\uacc4\ub8e1",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \uacc4\ub8e1\uc2dc \uc7a5\uc548\ub85c 46",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \uacc4\ub8e1\uc2dc \uae08\uc554\ub3d9 454",
+        "latitude": "127.2487781645",
+        "longitude": "36.2744503632"
+    },
+    {
+        "cityName": "\uae08\uc0b0",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \uae08\uc0b0\uad70 \uae08\uc0b0\uc74d \uad70\uccad\uae38 13",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \uae08\uc0b0\uad70 \uae08\uc0b0\uc74d \uc0c1\ub9ac 25-1",
+        "latitude": "127.4880058083",
+        "longitude": "36.1088885102"
+    },
+    {
+        "cityName": "\ubd80\uc5ec",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \ubd80\uc5ec\uad70 \ubd80\uc5ec\uc74d \uc0ac\ube44\ub85c 33",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \ubd80\uc5ec\uad70 \ubd80\uc5ec\uc74d \ub3d9\ub0a8\ub9ac 725",
+        "latitude": "126.9097728459",
+        "longitude": "36.2757348785"
+    },
+    {
+        "cityName": "\uc11c\ucc9c",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \uc11c\ucc9c\uad70 \uc11c\ucc9c\uc74d \uad70\uccad\ub85c 57",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \uc11c\ucc9c\uad70 \uc11c\ucc9c\uc74d \uad70\uc0ac\ub9ac 356-3",
+        "latitude": "126.6913016718",
+        "longitude": "36.0802348273"
+    },
+    {
+        "cityName": "\uccad\uc591",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \uccad\uc591\uad70 \uccad\uc591\uc74d \ubb38\ud654\uc608\uc220\ub85c 222",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \uccad\uc591\uad70 \uccad\uc591\uc74d \uc1a1\ubc29\ub9ac 100",
+        "latitude": "126.8023410200",
+        "longitude": "36.4582416725"
+    },
+    {
+        "cityName": "\ud64d\uc131",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \ud64d\uc131\uad70 \ud64d\uc131\uc74d \uc544\ubb38\uae38 27",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \ud64d\uc131\uad70 \ud64d\uc131\uc74d \uc624\uad00\ub9ac 98",
+        "latitude": "126.6613896244",
+        "longitude": "36.6017196006"
+    },
+    {
+        "cityName": "\uc608\uc0b0",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \uc608\uc0b0\uad70 \uc608\uc0b0\uc74d \uad70\uccad\ub85c 22",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \uc608\uc0b0\uad70 \uc608\uc0b0\uc74d \uc608\uc0b0\ub9ac 777",
+        "latitude": "126.8448507228",
+        "longitude": "36.6808805439"
+    },
+    {
+        "cityName": "\ud0dc\uc548",
+        "newAddress": "\ucda9\uccad\ub0a8\ub3c4 \ud0dc\uc548\uad70 \ud0dc\uc548\uc74d \uad70\uccad\ub85c 1",
+        "oldAddress": "\ucda9\uccad\ub0a8\ub3c4 \ud0dc\uc548\uad70 \ud0dc\uc548\uc74d \ub0a8\ubb38\ub9ac 90",
+        "latitude": "126.2983890173",
+        "longitude": "36.7459173938"
+    },
+    {
+        "cityName": "\uc804\uc8fc",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uc804\uc8fc\uc2dc \uc644\uc0b0\uad6c \ub178\uc1a1\uad11\uc7a5\ub85c 10",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uc804\uc8fc\uc2dc \uc644\uc0b0\uad6c \uc11c\ub178\uc1a1\ub3d9 568-1",
+        "latitude": "127.1480420569",
+        "longitude": "35.8241093266"
+    },
+    {
+        "cityName": "\uad70\uc0b0",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uad70\uc0b0\uc2dc \uc2dc\uccad\ub85c 17",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uad70\uc0b0\uc2dc \uc870\ucd0c\ub3d9 888",
+        "latitude": "126.7368399371",
+        "longitude": "35.9676323881"
+    },
+    {
+        "cityName": "\uc775\uc0b0",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uc775\uc0b0\uc2dc \uc778\ubd81\ub85c32\uae38 1",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uc775\uc0b0\uc2dc \ub0a8\uc911\ub3d9 60",
+        "latitude": "126.9578601151",
+        "longitude": "35.9475887720"
+    },
+    {
+        "cityName": "\uc815\uc74d",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uc815\uc74d\uc2dc \ucda9\uc815\ub85c 234",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uc815\uc74d\uc2dc \uc218\uc131\ub3d9 440-1",
+        "latitude": "126.8562978590",
+        "longitude": "35.5693267806"
+    },
+    {
+        "cityName": "\ub0a8\uc6d0",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \ub0a8\uc6d0\uc2dc \uc2dc\uccad\ub85c 60",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \ub0a8\uc6d0\uc2dc \ub3c4\ud1b5\ub3d9 518",
+        "latitude": "127.3903790372",
+        "longitude": "35.4164096775"
+    },
+    {
+        "cityName": "\uae40\uc81c",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uae40\uc81c\uc2dc \uc911\uc559\ub85c 40",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uae40\uc81c\uc2dc \uc11c\uc554\ub3d9 353",
+        "latitude": "126.8798724787",
+        "longitude": "35.8031230551"
+    },
+    {
+        "cityName": "\uc644\uc8fc",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uc644\uc8fc\uad70 \uc6a9\uc9c4\uc74d \uc9c0\uc554\ub85c 61",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uc644\uc8fc\uad70 \uc6a9\uc9c4\uc74d \uc6b4\uace1\ub9ac 975-78",
+        "latitude": "127.1607197565",
+        "longitude": "35.9052851256"
+    },
+    {
+        "cityName": "\uc9c4\uc548",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uc9c4\uc548\uad70 \uc9c4\uc548\uc74d \uc911\uc559\ub85c 67",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uc9c4\uc548\uad70 \uc9c4\uc548\uc74d \uad70\ud558\ub9ac 97-4",
+        "latitude": "127.4246680188",
+        "longitude": "35.7912538769"
+    },
+    {
+        "cityName": "\ubb34\uc8fc",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \ubb34\uc8fc\uad70 \ubb34\uc8fc\uc74d \uc8fc\uacc4\ub85c 97",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \ubb34\uc8fc\uad70 \ubb34\uc8fc\uc74d \uc74d\ub0b4\ub9ac 229-2",
+        "latitude": "127.6606738487",
+        "longitude": "36.0069165701"
+    },
+    {
+        "cityName": "\uc7a5\uc218",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uc7a5\uc218\uad70 \uc7a5\uc218\uc74d \ud638\ube44\ub85c 10",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uc7a5\uc218\uad70 \uc7a5\uc218\uc74d \uc7a5\uc218\ub9ac 176-7",
+        "latitude": "127.5208204422",
+        "longitude": "35.6478236151"
+    },
+    {
+        "cityName": "\uc784\uc2e4",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uc784\uc2e4\uad70 \uc784\uc2e4\uc74d \uc218\uc815\ub85c 30",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uc784\uc2e4\uad70 \uc784\uc2e4\uc74d \uc774\ub3c4\ub9ac 78",
+        "latitude": "127.2889352812",
+        "longitude": "35.6172744441"
+    },
+    {
+        "cityName": "\uc21c\ucc3d",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uc21c\ucc3d\uad70 \uc21c\ucc3d\uc74d \uacbd\ucc9c\ub85c 33",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uc21c\ucc3d\uad70 \uc21c\ucc3d\uc74d \uc21c\ud654\ub9ac 315-4",
+        "latitude": "127.1373693012",
+        "longitude": "35.3744560442"
+    },
+    {
+        "cityName": "\uace0\uc131",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \uace0\ucc3d\uad70 \uace0\ucc3d\uc74d \uc911\uc559\ub85c 245",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \uace0\ucc3d\uad70 \uace0\ucc3d\uc74d \uad50\ucd0c\ub9ac 275-3",
+        "latitude": "126.7020847257",
+        "longitude": "35.4358062861"
+    },
+    {
+        "cityName": "\ubd80\uc580",
+        "newAddress": "\uc804\ub77c\ubd81\ub3c4 \ubd80\uc548\uad70 \ubd80\uc548\uc74d \ub2f9\uc0b0\ub85c 91",
+        "oldAddress": "\uc804\ub77c\ubd81\ub3c4 \ubd80\uc548\uad70 \ubd80\uc548\uc74d \ub3d9\uc911\ub9ac 222-1",
+        "latitude": "126.7330774502",
+        "longitude": "35.7317156205"
+    },
+    {
+        "cityName": "\ubaa9\ud3ec",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \ubaa9\ud3ec\uc2dc \uc591\uc744\ub85c 203",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \ubaa9\ud3ec\uc2dc \uc6a9\ub2f9\ub3d9 1188-2",
+        "latitude": "126.3912845125",
+        "longitude": "34.8115341357"
+    },
+    {
+        "cityName": "\uc5ec\uc218",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc5ec\uc218\uc2dc \uc2dc\uccad\ub85c 1",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc5ec\uc218\uc2dc \ud559\ub3d9 100",
+        "latitude": "127.6635163464",
+        "longitude": "34.7599943921"
+    },
+    {
+        "cityName": "\uc21c\ucc9c",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc21c\ucc9c\uc2dc \uc7a5\uba85\ub85c 30",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc21c\ucc9c\uc2dc \uc7a5\ucc9c\ub3d9 53-1",
+        "latitude": "127.4873760593",
+        "longitude": "34.9501879626"
+    },
+    {
+        "cityName": "\ub098\uc8fc",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \ub098\uc8fc\uc2dc \uc2dc\uccad\uae38 22",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \ub098\uc8fc\uc2dc \uc1a1\uc6d4\ub3d9 1100",
+        "latitude": "126.7108384262",
+        "longitude": "35.0157823321"
+    },
+    {
+        "cityName": "\uad11\uc591",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uad11\uc591\uc2dc \uc2dc\uccad\ub85c 33",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uad11\uc591\uc2dc \uc911\ub3d9 1313",
+        "latitude": "127.6959675349",
+        "longitude": "34.9406305551"
+    },
+    {
+        "cityName": "\ub2f4\uc591",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \ub2f4\uc591\uad70 \ub2f4\uc591\uc74d \ucd94\uc131\ub85c 1371",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \ub2f4\uc591\uad70 \ub2f4\uc591\uc74d \uac1d\uc0ac\ub9ac 99-1",
+        "latitude": "126.9881755191",
+        "longitude": "35.3212107701"
+    },
+    {
+        "cityName": "\uace1\uc131",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uace1\uc131\uad70 \uace1\uc131\uc74d \uad70\uccad\ub85c 50",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uace1\uc131\uad70 \uace1\uc131\uc74d \uc74d\ub0b4\ub9ac 713-2",
+        "latitude": "127.2926555933",
+        "longitude": "35.2821574831"
+    },
+    {
+        "cityName": "\uad6c\ub840",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uad6c\ub840\uad70 \uad6c\ub840\uc74d \ubd09\uc131\ub85c 1",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uad6c\ub840\uad70 \uad6c\ub840\uc74d \ubd09\ub0a8\ub9ac 51",
+        "latitude": "127.4634435820",
+        "longitude": "35.2020753086"
+    },
+    {
+        "cityName": "\uace0\ud765",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uace0\ud765\uad70 \uace0\ud765\uc74d \ud765\uc591\uae38 40",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uace0\ud765\uad70 \uace0\ud765\uc74d \uc625\ud558\ub9ac 200-2",
+        "latitude": "127.2850606758",
+        "longitude": "34.6111827673"
+    },
+    {
+        "cityName": "\ubcf4\uc131",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \ubcf4\uc131\uad70 \ubcf4\uc131\uc74d \uc1a1\uc7ac\ub85c 165",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \ubcf4\uc131\uad70 \ubcf4\uc131\uc74d \ubcf4\uc131\ub9ac 807-2",
+        "latitude": "127.0800207709",
+        "longitude": "34.7714931844"
+    },
+    {
+        "cityName": "\ud654\uc21c",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \ud654\uc21c\uad70 \ud654\uc21c\uc74d \ub3d9\ud5cc\uae38 23",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \ud654\uc21c\uad70 \ud654\uc21c\uc74d \ud6c8\ub9ac 35",
+        "latitude": "126.9864980438",
+        "longitude": "35.0645588501"
+    },
+    {
+        "cityName": "\uc7a5\ud765",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc7a5\ud765\uad70 \uc7a5\ud765\uc74d \uc7a5\ud765\ub85c 21",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc7a5\ud765\uad70 \uc7a5\ud765\uc74d \uac74\uc0b0\ub9ac 715-11",
+        "latitude": "126.9065383901",
+        "longitude": "34.6821633453"
+    },
+    {
+        "cityName": "\uac15\uc9c4",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uac15\uc9c4\uad70 \uac15\uc9c4\uc74d \ud0d0\uc9c4\ub85c 111",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uac15\uc9c4\uad70 \uac15\uc9c4\uc74d \ub0a8\uc131\ub9ac 108-1",
+        "latitude": "126.7673278407",
+        "longitude": "34.6417264117"
+    },
+    {
+        "cityName": "\ud574\ub0a8",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \ud574\ub0a8\uad70 \ud574\ub0a8\uc74d \uad70\uccad\uae38 4",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \ud574\ub0a8\uad70 \ud574\ub0a8\uc74d \uc131\ub0b4\ub9ac 4",
+        "latitude": "126.5990653595",
+        "longitude": "34.5734798587"
+    },
+    {
+        "cityName": "\uc601\uc554",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc601\uc554\uad70 \uc601\uc554\uc74d \uad70\uccad\ub85c 1",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc601\uc554\uad70 \uc601\uc554\uc74d \ub3d9\ubb34\ub9ac 158",
+        "latitude": "126.6968014548",
+        "longitude": "34.8001890142"
+    },
+    {
+        "cityName": "\ubb34\uc548",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \ubb34\uc548\uad70 \ubb34\uc548\uc74d \ubb34\uc548\ub85c 530",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \ubb34\uc548\uad70 \ubb34\uc548\uc74d \uc131\ub3d9\ub9ac 712-1",
+        "latitude": "126.4826929676",
+        "longitude": "34.9906585146"
+    },
+    {
+        "cityName": "\ud568\ud3c9",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \ud568\ud3c9\uad70 \ud568\ud3c9\uc74d \uc911\uc559\uae38 200",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \ud568\ud3c9\uad70 \ud568\ud3c9\uc74d \ud568\ud3c9\ub9ac 123-1",
+        "latitude": "126.5173824641",
+        "longitude": "35.0660836422"
+    },
+    {
+        "cityName": "\uc601\uad11",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc601\uad11\uad70 \uc601\uad11\uc74d \uc911\uc559\ub85c 203",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc601\uad11\uad70 \uc601\uad11\uc74d \ubb34\ub839\ub9ac 198-4",
+        "latitude": "126.5122496708",
+        "longitude": "35.2774469625"
+    },
+    {
+        "cityName": "\uc7a5\uc131",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc7a5\uc131\uad70 \uc7a5\uc131\uc74d \uc601\ucc9c\ub85c 200",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc7a5\uc131\uad70 \uc7a5\uc131\uc74d \uc601\ucc9c\ub9ac 1061-2",
+        "latitude": "126.7848747547",
+        "longitude": "35.3019116788"
+    },
+    {
+        "cityName": "\uc644\ub3c4",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc644\ub3c4\uad70 \uc644\ub3c4\uc74d \uccad\ud574\uc9c4\ub0a8\ub85c 51",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc644\ub3c4\uad70 \uc644\ub3c4\uc74d \uad70\ub0b4\ub9ac 650-1",
+        "latitude": "126.7549596403",
+        "longitude": "34.3109716271"
+    },
+    {
+        "cityName": "\uc9c4\ub3c4",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc9c4\ub3c4\uad70 \uc9c4\ub3c4\uc74d \ucca0\ub9c8\uae38 25",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc9c4\ub3c4\uad70 \uc9c4\ub3c4\uc74d \uc131\ub0b4\ub9ac 64-1",
+        "latitude": "126.2629813395",
+        "longitude": "34.4862092377"
+    },
+    {
+        "cityName": "\uc2e0\uc548",
+        "newAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc2e0\uc548\uad70 \uc555\ud574\uc74d \ucc9c\uc0ac\ub85c 1004",
+        "oldAddress": "\uc804\ub77c\ub0a8\ub3c4 \uc2e0\uc548\uad70 \uc555\ud574\uc74d \uc2e0\uc7a5\ub9ac 462-10",
+        "latitude": "126.3514258252",
+        "longitude": "34.8336033562"
+    },
+    {
+        "cityName": "\ud3ec\ud56d",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \ud3ec\ud56d\uc2dc \ub0a8\uad6c \uc2dc\uccad\ub85c 1",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \ud3ec\ud56d\uc2dc \ub0a8\uad6c \ub300\uc7a0\ub3d9 1001",
+        "latitude": "129.3438886719",
+        "longitude": "36.0187289936"
+    },
+    {
+        "cityName": "\uacbd\uc8fc",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uacbd\uc8fc\uc2dc \uc591\uc815\ub85c 260",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uacbd\uc8fc\uc2dc \ub3d9\ucc9c\ub3d9 800",
+        "latitude": "129.2247235838",
+        "longitude": "35.8561979124"
+    },
+    {
+        "cityName": "\uae40\ucc9c",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uae40\ucc9c\uc2dc \uc2dc\uccad1\uae38 1",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uae40\ucc9c\uc2dc \uc2e0\uc74c\ub3d9 1284",
+        "latitude": "128.1133064994",
+        "longitude": "36.1397144961"
+    },
+    {
+        "cityName": "\uc548\ub3d9",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc548\ub3d9\uc2dc \ud1f4\uacc4\ub85c 115",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc548\ub3d9\uc2dc \uba85\ub95c\ub3d9 344",
+        "latitude": "128.7295827520",
+        "longitude": "36.5684536221"
+    },
+    {
+        "cityName": "\uad6c\ubbf8",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uad6c\ubbf8\uc2dc \uc1a1\uc815\ub300\ub85c 55",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uad6c\ubbf8\uc2dc \uc1a1\uc815\ub3d9 50",
+        "latitude": "128.3438229935",
+        "longitude": "36.1200153554"
+    },
+    {
+        "cityName": "\uc601\uc8fc",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc601\uc8fc\uc2dc \uc2dc\uccad\ub85c 1",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc601\uc8fc\uc2dc \ud734\ucc9c\ub3d9 470",
+        "latitude": "128.6242786582",
+        "longitude": "36.8063029799"
+    },
+    {
+        "cityName": "\uc601\ucc9c",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc601\ucc9c\uc2dc \uc2dc\uccad\ub85c 16",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc601\ucc9c\uc2dc \ubb38\uc678\ub3d9 27",
+        "latitude": "128.9384777154",
+        "longitude": "35.9733117941"
+    },
+    {
+        "cityName": "\uc0c1\uc8fc",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc0c1\uc8fc\uc2dc \uc0c1\uc0b0\ub85c 223",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc0c1\uc8fc\uc2dc \ub0a8\uc131\ub3d9 140-3",
+        "latitude": "128.1587369475",
+        "longitude": "36.4113835065"
+    },
+    {
+        "cityName": "\ubb38\uacbd",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \ubb38\uacbd\uc2dc \ub2f9\uad50\ub85c 225",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \ubb38\uacbd\uc2dc \ubaa8\uc804\ub3d9 220",
+        "latitude": "128.1868660378",
+        "longitude": "36.5868364053"
+    },
+    {
+        "cityName": "\uacbd\uc0b0",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uacbd\uc0b0\uc2dc \ub0a8\ub9e4\ub85c 159",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uacbd\uc0b0\uc2dc \uc911\ubc29\ub3d9 701-17",
+        "latitude": "128.7405566644",
+        "longitude": "35.8251430587"
+    },
+    {
+        "cityName": "\uad70\uc704",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uad70\uc704\uad70 \uad70\uc704\uc74d \uad70\uccad\ub85c 200",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uad70\uc704\uad70 \uad70\uc704\uc74d \ub3d9\ubd80\ub9ac 229",
+        "latitude": "128.5725142017",
+        "longitude": "36.2432342224"
+    },
+    {
+        "cityName": "\uc758\uc131",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc758\uc131\uad70 \uc758\uc131\uc74d \uad70\uccad\uae38 31",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc758\uc131\uad70 \uc758\uc131\uc74d \ud6c4\uc8fd\ub9ac 509-2",
+        "latitude": "128.6972069138",
+        "longitude": "36.3527110059"
+    },
+    {
+        "cityName": "\uccad\uc1a1",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uccad\uc1a1\uad70 \uccad\uc1a1\uc74d \uad70\uccad\ub85c 51",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uccad\uc1a1\uad70 \uccad\uc1a1\uc74d \uc6d4\ub9c9\ub9ac 330",
+        "latitude": "129.0570711290",
+        "longitude": "36.4362515730"
+    },
+    {
+        "cityName": "\uc601\uc591",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc601\uc591\uad70 \uc601\uc591\uc74d \uad70\uccad\uae38 37",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc601\uc591\uad70 \uc601\uc591\uc74d \uc11c\ubd80\ub9ac 379-1",
+        "latitude": "129.1123667509",
+        "longitude": "36.6671811083"
+    },
+    {
+        "cityName": "\uc601\ub355",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc601\ub355\uad70 \uc601\ub355\uc74d \uad70\uccad\uae38 116",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc601\ub355\uad70 \uc601\ub355\uc74d \ub0a8\uc11d\ub9ac 310-3",
+        "latitude": "129.3653995835",
+        "longitude": "36.4150348139"
+    },
+    {
+        "cityName": "\uccad\ub3c4",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uccad\ub3c4\uad70 \ud654\uc591\uc74d \uccad\ud654\ub85c 70",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uccad\ub3c4\uad70 \ud654\uc591\uc74d \ubc94\uace1\ub9ac 133",
+        "latitude": "128.7339991362",
+        "longitude": "35.6472516765"
+    },
+    {
+        "cityName": "\uace0\ub839",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uace0\ub839\uad70 \ub300\uac00\uc57c\uc74d \uc655\ub989\ub85c 55",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uace0\ub839\uad70 \ub300\uac00\uc57c\uc74d \uc9c0\uc0b0\ub9ac 190",
+        "latitude": "128.2626861998",
+        "longitude": "35.7251122432"
+    },
+    {
+        "cityName": "\uc131\uc8fc",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc131\uc8fc\uad70 \uc131\uc8fc\uc74d \uc131\uc8fc\ub85c 3200",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc131\uc8fc\uad70 \uc131\uc8fc\uc74d \uacbd\uc0b0\ub9ac 283-1",
+        "latitude": "128.2837846432",
+        "longitude": "35.9190410605"
+    },
+    {
+        "cityName": "\uce60\uace1",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uce60\uace1\uad70 \uc65c\uad00\uc74d \uad70\uccad1\uae38 80",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uce60\uace1\uad70 \uc65c\uad00\uc74d \uc65c\uad00\ub9ac 177-1",
+        "latitude": "128.4016427108",
+        "longitude": "35.9954925889"
+    },
+    {
+        "cityName": "\uc608\ucc9c",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc608\ucc9c\uad70 \uc608\ucc9c\uc74d \uad70\uccad\uae38 33",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc608\ucc9c\uad70 \uc608\ucc9c\uc74d \ub178\uc0c1\ub9ac 125-1",
+        "latitude": "128.4529794601",
+        "longitude": "36.6577000528"
+    },
+    {
+        "cityName": "\ubd09\ud654",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \ubd09\ud654\uad70 \ubd09\ud654\uc74d \ubd09\ud654\ub85c 1111",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \ubd09\ud654\uad70 \ubd09\ud654\uc74d \ub0b4\uc131\ub9ac 537",
+        "latitude": "128.7326154405",
+        "longitude": "36.8931317595"
+    },
+    {
+        "cityName": "\uc6b8\uc9c4",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc6b8\uc9c4\uad70 \uc6b8\uc9c4\uc74d \uc6b8\uc9c4\uc911\uc559\ub85c 121",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc6b8\uc9c4\uad70 \uc6b8\uc9c4\uc74d \uc74d\ub0b4\ub9ac 464",
+        "latitude": "129.4005165040",
+        "longitude": "36.9930643613"
+    },
+    {
+        "cityName": "\uc6b8\ub989",
+        "newAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc6b8\ub989\uad70 \uc6b8\ub989\uc74d \ub3c4\ub3d92\uae38 66",
+        "oldAddress": "\uacbd\uc0c1\ubd81\ub3c4 \uc6b8\ub989\uad70 \uc6b8\ub989\uc74d \ub3c4\ub3d9\ub9ac 206-1",
+        "latitude": "130.9056438274",
+        "longitude": "37.4843322197"
+    },
+    {
+        "cityName": "\ucc3d\uc6d0",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ucc3d\uc6d0\uc2dc \uc758\ucc3d\uad6c \uc911\uc559\ub300\ub85c 151",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ucc3d\uc6d0\uc2dc \uc758\ucc3d\uad6c \uc6a9\ud638\ub3d9 1",
+        "latitude": "128.6817674346",
+        "longitude": "35.2289681291"
+    },
+    {
+        "cityName": "\uc9c4\uc8fc",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uc9c4\uc8fc\uc2dc \ub3d9\uc9c4\ub85c 155",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uc9c4\uc8fc\uc2dc \uc0c1\ub300\ub3d9 284",
+        "latitude": "128.1088219772",
+        "longitude": "35.1802450717"
+    },
+    {
+        "cityName": "\ud1b5\uc601",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ud1b5\uc601\uc2dc \ud1b5\uc601\ud574\uc548\ub85c 515",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ud1b5\uc601\uc2dc \ubb34\uc804\ub3d9 357",
+        "latitude": "128.4331780691",
+        "longitude": "34.8543435379"
+    },
+    {
+        "cityName": "\uc0ac\ucc9c",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uc0ac\ucc9c\uc2dc \uc6a9\ud604\uba74 \uc2dc\uccad\ub85c 77",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uc0ac\ucc9c\uc2dc \uc6a9\ud604\uba74 \ub355\uace1\ub9ac 501",
+        "latitude": "128.0642074652",
+        "longitude": "35.0036195366"
+    },
+    {
+        "cityName": "\uae40\ud574",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uae40\ud574\uc2dc \uae40\ud574\ub300\ub85c 2401",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uae40\ud574\uc2dc \ubd80\uc6d0\ub3d9 623",
+        "latitude": "128.8898335556",
+        "longitude": "35.2287887063"
+    },
+    {
+        "cityName": "\ubc00\uc591",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ubc00\uc591\uc2dc \ubc00\uc591\ub300\ub85c 2047",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ubc00\uc591\uc2dc \uad50\ub3d9 1000-1",
+        "latitude": "128.7474194957",
+        "longitude": "35.5034486464"
+    },
+    {
+        "cityName": "\uac70\uc81c",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uac70\uc81c\uc2dc \uacc4\ub8e1\ub85c 125",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uac70\uc81c\uc2dc \uace0\ud604\ub3d9 717",
+        "latitude": "128.6208142790",
+        "longitude": "34.8805288283"
+    },
+    {
+        "cityName": "\uc591\uc0b0",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uc591\uc0b0\uc2dc \uc911\uc559\ub85c 39",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uc591\uc0b0\uc2dc \ub0a8\ubd80\ub3d9 505",
+        "latitude": "129.0365213515",
+        "longitude": "35.3344964778"
+    },
+    {
+        "cityName": "\uc758\ub839",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uc758\ub839\uad70 \uc758\ub839\uc74d \ucda9\uc775\ub85c 63",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uc758\ub839\uad70 \uc758\ub839\uc74d \uc911\ub3d9\ub9ac 261-1",
+        "latitude": "128.2613938894",
+        "longitude": "35.3223716598"
+    },
+    {
+        "cityName": "\ud568\uc548",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ud568\uc548\uad70 \uac00\uc57c\uc74d \ub9d0\uc0b0\ub85c 1",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ud568\uc548\uad70 \uac00\uc57c\uc74d \ub9d0\uc0b0\ub9ac 213",
+        "latitude": "128.4065483825",
+        "longitude": "35.2725099345"
+    },
+    {
+        "cityName": "\ucc3d\ub155",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ucc3d\ub155\uad70 \ucc3d\ub155\uc74d \uad70\uccad\uae38 1",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ucc3d\ub155\uad70 \ucc3d\ub155\uc74d \uad50\ub9ac 1",
+        "latitude": "128.4915889344",
+        "longitude": "35.5450190734"
+    },
+    {
+        "cityName": "\uace0\uc131",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uace0\uc131\uad70 \uace0\uc131\uc74d \uc131\ub0b4\ub85c 130",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uace0\uc131\uad70 \uace0\uc131\uc74d \uc131\ub0b4\ub9ac 198",
+        "latitude": "128.3223123009",
+        "longitude": "34.9727379054"
+    },
+    {
+        "cityName": "\ub0a8\ud574",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ub0a8\ud574\uad70 \ub0a8\ud574\uc74d \ub9dd\uc6b4\ub85c9\ubc88\uae38 12",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ub0a8\ud574\uad70 \ub0a8\ud574\uc74d \ubd81\ubcc0\ub9ac 140-7",
+        "latitude": "127.8923110927",
+        "longitude": "34.8372082952"
+    },
+    {
+        "cityName": "\ud558\ub3d9",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ud558\ub3d9\uad70 \ud558\ub3d9\uc74d \uad70\uccad\ub85c 23",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ud558\ub3d9\uad70 \ud558\ub3d9\uc74d \uc74d\ub0b4\ub9ac 180-3",
+        "latitude": "127.7522725125",
+        "longitude": "35.0672779846"
+    },
+    {
+        "cityName": "\uc0b0\uccad",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uc0b0\uccad\uad70 \uc0b0\uccad\uc74d \uc0b0\uc5d4\uccad\ub85c 1",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uc0b0\uccad\uad70 \uc0b0\uccad\uc74d \uc625\uc0b0\ub9ac 465-3",
+        "latitude": "127.8739008318",
+        "longitude": "35.4151550772"
+    },
+    {
+        "cityName": "\ud568\uc591",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ud568\uc591\uad70 \ud568\uc591\uc74d \uace0\uc6b4\ub85c 35",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ud568\uc591\uad70 \ud568\uc591\uc74d \uc6b4\ub9bc\ub9ac 31-2",
+        "latitude": "127.7247225275",
+        "longitude": "35.5203747810"
+    },
+    {
+        "cityName": "\uac70\ucc3d",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uac70\ucc3d\uad70 \uac70\ucc3d\uc74d \uc911\uc559\ub85c 103",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \uac70\ucc3d\uad70 \uac70\ucc3d\uc74d \uc0c1\ub9bc\ub9ac 64-1",
+        "latitude": "127.9095338362",
+        "longitude": "35.6866771846"
+    },
+    {
+        "cityName": "\ud569\ucc9c",
+        "newAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ud569\ucc9c\uad70 \ud569\ucc9c\uc74d \ub3d9\uc11c\ub85c 119",
+        "oldAddress": "\uacbd\uc0c1\ub0a8\ub3c4 \ud569\ucc9c\uad70 \ud569\ucc9c\uc74d \ud569\ucc9c\ub9ac 337",
+        "latitude": "128.166147",
+        "longitude": "35.5666135"
+    },
+    {
+        "cityName": "\uc81c\uc8fc",
+        "newAddress": "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4 \uc81c\uc8fc\uc2dc \ubb38\uc5f0\ub85c 6",
+        "oldAddress": "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4 \uc81c\uc8fc\uc2dc \uc5f0\ub3d9 312-1",
+        "latitude": "126.4975929276",
+        "longitude": "33.4887818899"
+    }
+]

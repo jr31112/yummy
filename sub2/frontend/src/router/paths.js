@@ -5,9 +5,14 @@ export default [
     name: "home"
   },
   {
-    path: "/search",
-    view: "Search",
-    name: "search"
+    path: "/planner",
+    view: "Planner",
+    name: "planner"
+  },
+  {
+    path: "/planner/create",
+    view: "CreatePlan",
+    name: "createplan"
   },
   {
     path: "/signup",
@@ -19,9 +24,4 @@ export default [
     view: "Detail",
     name: "detail"
   },
-  {
-    path: "/login",
-    view: "Login",
-    name: "login"
-  }
 ];

@@ -9,7 +9,12 @@ export default new Vuex.Store({
     state: {
         userinfo:null, //db로부터 얻어온 정보가 여기에 저장(회원정보)
         isLogin:false,
-        isLoginError:false
+        isLoginError:false,
+        email:'',
+        gender:'',
+        birth_year:'',
+        nickname:'',
+        dialog:false
     },
     mutations: {
         loginsuccess(state, payload){
@@ -26,7 +31,7 @@ export default new Vuex.Store({
             state.isLogin = false
             state.isLoginError = false
             state.userinfo = null
-            sessionStorage.removeItem('access_token')
+            localStorage.removeItem('access_token')
         },
         
     },
@@ -38,63 +43,61 @@ export default new Vuex.Store({
             form.append('password', loginObj.password)
             // 로그인 -> 토큰반환
             axios.post("http://127.0.0.1:8000/login/", form)
-            .then(res=>{
-                console.log(res)
+            .then(response=>{
                 //let token = res.data.token;
-                if(res.data.token){ //로그인 성공
-                    let token = res.data.token
-                    //토큰을 로컬스토리지에 저장
-                    sessionStorage.setItem("access_token", token)
+                if(response.data.token){ //로그인 성공
+                    this.state.dialog = false
+                    let token = response.data.token
+                    //토큰을 로컬스토리지에 저장 
+
+                    this.state.email = response.data.user.email
+                    this.state.gender = response.data.user.gender,
+                    this.state.birth_year = response.data.user.birth_year,
+                    this.state.nickname = response.data.user.nickname,
+
+                    localStorage.setItem("access_token", token)
                     // dispatch("getMemberInfo") //액션은 디스패치로 불러온다.
                     dispatch("getMemberInfo")
                 }
+  
                 else {
-                    sessionStorage.removeItem('access_token')
+                    localStorage.removeItem('access_token')
                     alert("아이디 혹은 비밀번호를 확인해주세요.")
                 }
             })
             
             .catch(error=>{
-                alert("이메일과 비밀번호를 확인하세요!")
                 console.log(error)
             })
         },
         logout({commit}){
-  
             commit("logout")
-            if(router.history.current.name!=='login'){
-                router.push({name:"login"})
-            }
-           
-          },
+            router.push({name:"home"})
+        },
 
         getMemberInfo({commit}){
-            let token = sessionStorage.getItem("access_token")
-            //로컬 스토리지에 저장되어 있는 토큰을 불러온다.
-            if(token!=null){
-              // 반환된 토큰을 가지고 유저 정보를 가져와 저장(멤버 정보 반환)
-                axios.get("http://127.0.0.1:8000/user/", {headers: { 'Authorization': `JWT ${token}`}})
-                .then(response=>{
-                    console.log(response)
-                    let userinfo = {
-                        email : response.data.email,
-                        gender : response.data.gender,
-                        birth_year : response.data.birth_year,
-                        nickname : response.data.nickname,
-                    }
-                    commit('loginsuccess',userinfo);
-                    if(router.history.current.name=='login'){
-                        router.push({name:"home"});
-                    }
-                })
-                .catch(error=>{
-                    sessionStorage.removeItem('access_token')
-                    alert("??")
-                    console.log(error)
-                })
-              
+            let token = localStorage.getItem("access_token")
+            if(token){
+
+                //로컬 스토리지에 저장되어 있는 토큰을 불러온다.
+                // 반환된 토큰을 가지고 유저 정보를 가져와 저장(멤버 정보 반환)
+                let userinfo = {
+                    email : this.state.email,
+                    nickname : this.state.nickname,
+                    gender : this.state.gender,
+                    birth_year : this.state.birth_year,
+                }
+                
+                commit('loginsuccess',userinfo);
+                var router = this.$router;
+                    router.push({
+                        name: "home",
+                        params: {
+                        }
+                    });
+                
             }
-        }
-         
+            
+        } 
     }, 
 })

@@ -1,6 +1,6 @@
 <template>
 <v-app>
-    <div class="user join">
+    <div class="user join" style="position:relative; top:100px">
         <div class="header" style="width:100%; height:40px">
             <p style="vertical-align: middle;padding: 8px 5px;float:left;">회원가입</p>
         </div>
@@ -34,8 +34,6 @@
                 <v-text-field style="color:blue;" label="나이" v-model="birth_year" id="birth_year"></v-text-field>
             </div>
             <br>
-
-            
         <div>
             <button @click="submit">
                 회원가입
@@ -68,16 +66,17 @@ import axios from 'axios'
                 form.append('email', this.email)
                 form.append('password1', this.password1)
                 form.append('password2', this.password2)
-                    
+                alert('asd')
                 axios.post("http://127.0.0.1:8000/signup/", form)
                 .then(Response => {
+                    console.log(Response)
                     var router = this.$router;
                             router.push({
                                 name: "home",
                                 params: {
                                     "email": this.email,
                                 }
-                            });
+                    });
                 })
                 .catch(Error => {
                     alert('이메일과 비밀번호를 확인하세요')

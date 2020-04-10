@@ -6,8 +6,10 @@ import router from "./router";
 import store from "./vuex/store";
 import Vuex from 'vuex'
 import axios from 'axios'
+import VueCarousel from 'vue-carousel';
 
 export const EventBus = new Vue()
+Vue.use(VueCarousel);
 Vue.use(Vuex)
 Vue.prototype.$Axios = axios;
 
